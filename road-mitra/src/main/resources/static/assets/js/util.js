@@ -1,0 +1,170 @@
+class SnackBar {
+    snackbarHtml = ``;
+    
+    snackbarAnimationCss = `
+    .snack_success{
+        background-color:green;
+    }
+
+    .snack_error{
+        background-color:red;
+    }
+
+    .snack_enter{
+        animation: snackenter .5s;
+    }
+
+    @keyframes snackenter{
+        0%{
+            opacity:0;
+           transform: translateY(50px);
+        }
+        100%{
+            opacity:1;
+            transform: translateY(0px);
+        }
+    }
+
+    .snack_exit{
+        animation: snackexit .5s;
+    }
+
+    @keyframes snackexit{
+        0%{
+            opacity:1;
+        }
+        100%{
+            opacity:0;
+        }
+    }
+
+    `
+    constructor() {
+        var styleTag = document.createElement('style');
+        styleTag.setAttribute('type', 'text/css');
+        styleTag.innerHTML = this.snackbarAnimationCss;
+        document.head.appendChild(styleTag);
+    }
+
+    openSnack(message, timeout, type) {
+        this.snackbarHtml = `<div class="pb-10" style="position:fixed;bottom:0px;z-index:17;width:100%"><div class="snack_enter mx-auto px-20 py-15" style="width:fit-content; border-radius:10px;color:White">${message}</div><div>`;
+        var snackbarDiv = document.createElement('div');
+        snackbarDiv.innerHTML = this.snackbarHtml;
+        document.body.appendChild(snackbarDiv);
+        document.querySelectorAll('.snack_enter').forEach((elm) => {
+            elm.classList.add(type);
+        })
+        setTimeout(() => {
+            snackbarDiv.classList.add('snack_exit');
+            snackbarDiv.addEventListener('animationend', () => {
+                document.body.removeChild(snackbarDiv);
+            })
+
+        }, timeout);
+
+    }
+
+}
+
+
+
+class ScrollToView {
+    constructor() {
+
+    }
+
+    scrollHere(id) {
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'center'
+        });
+    }
+}
+
+class Loader {
+
+    loaderCSS = `.loader {
+        width: 48px;
+        height: 48px;
+        position: relative;
+        animation : rotate 4s linear infinite;
+      }
+      .loader:before,
+      .loader:after {
+        content:"";
+        display: block;
+        border: 24px solid;
+        border-color: transparent transparent #fff  #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: mvx 1s infinite ease-in;
+      }
+      .loader:before {
+        left: -1px;
+        top: 1px;
+        border-color:#ffcc33  #ffcc33 transparent transparent;
+        animation-name:mvrx;
+      }
+    
+      @keyframes rotate {
+        100% {transform: rotate(360deg)}
+      }
+      @keyframes mvx {
+        0% , 15% {transform: translate(0 , 0) rotate(0deg)}
+        50% {transform: translate(-50% , 50%) rotate(180deg)}
+        100% {transform: translate(0% , 0%) rotate(180deg)}
+      }
+      @keyframes mvrx {
+        0% , 15%  {transform: translate(0 , 0) rotate(0deg)}
+        50% {transform: translate(50% , -50%) rotate(180deg)}
+        100% {transform: translate(0% , 0%) rotate(180deg)}
+      }
+    
+    `
+    constructor() {
+        var styleTag = document.createElement('style');
+        styleTag.setAttribute('type', 'text/css');
+        styleTag.innerHTML = this.loaderCSS;
+        document.head.appendChild(styleTag);
+    }
+
+    openLoader() {
+        this.LoaderHtml = `<div style="position:fixed; top:0px;left:0px;display:flex;justify-content:center;align-items:center;width:100vw; height:100vh;background-color: rgba(0, 0, 0, 0.577);z-index:10">
+        <span class="loader"></span>
+    </div>`;
+        var loaderDiv = document.createElement('div');
+        loaderDiv.innerHTML = this.LoaderHtml;
+        document.body.appendChild(loaderDiv);
+        setTimeout(() => {
+            document.body.removeChild(loaderDiv);
+        }, 3000);
+    }
+
+}
+
+class openSubDomainUrl {
+    constructor() {
+        this.loader = new Loader();
+    }
+
+    openApp(url) {
+        this.loader.openLoader();
+        window.location.href = "https://app.readyassist.in" + url
+    }
+}
+
+class openExternalUrl {
+    openurl(url) {
+        window.open("https://" + url, "_blank");
+    }
+}
+
+class router{
+    routeTo(url) {
+        window.location.href = url;
+      }
+}
+
+export default { SnackBar, Loader, ScrollToView, openExternalUrl, router, openSubDomainUrl };

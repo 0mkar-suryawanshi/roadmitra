@@ -1,0 +1,1405 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+#about_landing {
+  background-image: url(./../images/about_us/abouts.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  backdrop-filter: blur(7);
+  color: white;
+}
+
+#about_title {
+  font-size: 40px;
+}
+
+#about_description {
+  font-size: 14px;
+}
+
+#relax_subtitle {
+  font-size: 13px;
+}
+
+#about_relax h1 {
+  font-size: 30px;
+  line-height: 110%;
+}
+
+#relax_description {
+  font-size: 14px;
+  color: #666666;
+}
+
+#relax_points span {
+  color: #666666;
+}
+
+#relax_points p {
+  padding: 10px 0px;
+  font-size: 14px;
+}
+
+#about_gallery {
+  background-color: black;
+  min-height: calc(100vh - 65px);
+}
+
+#about_gallery img {
+  transition: 0.4s;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#about_gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.893) 0px 22px 70px 4px;
+}
+
+#about_gallerybg {
+  background-image: url(./../../assets/images/test/pattern.png);
+  background-size: contain;
+  z-index: 2;
+  opacity: 0.1;
+  top: 0px;
+  left: 0px;
+}
+
+#gallery_description {
+  position: sticky;
+  background-color: black;
+  height: fit-content;
+  top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+
+#gallery_description> :first-child {
+  font-size: 50px;
+  line-height: 110%;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#gallery_description span {
+  color: black;
+}
+
+#gallery_description> :nth-child(2) {
+  font-size: 16px;
+  transition: 0.5s;
+  line-height: 1.5;
+}
+
+.scroll-cards {
+  position: relative;
+  display: block;
+}
+
+.scroll_cards_item {
+  color: #000;
+  position: sticky;
+  top: 200px;
+  height: 300px;
+  padding: 0px 0px;
+  border-radius: 20px;
+  max-width: 1200px;
+  overflow: hidden;
+  --offset: 200px;
+}
+
+.scroll_cards_item:nth-of-type(0) {
+  transform: translate(0px, calc((0 - 1) * var(--offset)));
+}
+
+.scroll_cards_item:nth-of-type(1) {
+  transform: translate(0px, calc((1 - 1) * var(--offset)));
+}
+
+.scroll_cards_item:nth-of-type(2) {
+  transform: translate(0px, calc((2 - 1) * var(--offset)));
+  transform: rotate(4deg);
+}
+
+.scroll_cards_item:nth-of-type(3) {
+  transform: translate(0px, calc((3 - 1) * var(--offset)));
+  transform: rotate(-3deg);
+}
+
+.scroll_cards_item:nth-of-type(4) {
+  transform: translate(0px, calc((4 - 1) * var(--offset)));
+  transform: rotate(3deg);
+}
+
+.scroll_cards_item:nth-of-type(5) {
+  transform: translate(0px, calc((5 - 1) * var(--offset)));
+  transform: rotate(-2deg);
+}
+
+#offer_title {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.stack_cards {
+  height: 200px;
+}
+
+.stack_img {
+  width: 100px;
+  height: 100px;
+}
+
+.offer_titles {
+  font-size: 16px;
+}
+
+.offer_description {
+  font-size: 13px;
+}
+
+#about_partner>p:first-child {
+  font-size: 18px;
+}
+
+#about_partner>p:nth-child(2) {
+  font-size: 30px;
+}
+
+.brand_img {
+  filter: grayscale(100%);
+  max-width: 100px;
+}
+
+#board_title {
+  font-size: 30px;
+}
+
+#board_description {
+  font-size: 14px;
+  color: #666666;
+}
+
+.memberName {
+  font-size: 15px;
+}
+
+.memberName~p {
+  font-size: 12px;
+}
+
+.memberName~p:nth-child(6) {
+  font-size: 13px;
+  color: rgb(158, 158, 158);
+}
+
+.memberName~p:nth-child(6):hover {
+  color: black;
+}
+
+#team_description>p:first-child {
+  font-size: 30px;
+  line-height: 1;
+}
+
+#team_description>p:nth-child(2) {
+  font-size: 15px;
+}
+
+#team_description h2 {
+  font-size: 25px;
+  line-height: 130%;
+}
+
+#team_description a {
+  background-color: rgb(255, 213, 23);
+  border: transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#team_images>img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+#team_scroll_container {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.team_cards {
+  max-height: 450px;
+}
+
+.team_img {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.team_img:hover {
+  filter: grayscale(0%);
+}
+
+#advisor_details>p:nth-child(2) {
+  font-size: 22px;
+}
+
+#advisor_details>p:nth-child(n + 3) {
+  margin: 10px 0px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.vivek_img {
+  max-height: 400px;
+}
+
+.scrollDivs>p:nth-child(2) {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.scrollDivs>p:nth-child(3) {
+  font-size: 13px;
+}
+
+#celebrations_mobile_content {
+  background-color: rgba(0, 0, 0, 0.632);
+  color: white;
+  top: 0px;
+  right: 0px;
+}
+
+#celebrations_mobile_title {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+#celebrations_mobile_description {
+  font-size: 18px;
+}
+
+#relax_points {
+  padding-left: 10px;
+}
+
+.chief_advisor_text {
+  background-color: rgb(64, 64, 64);
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.galleryImages {
+  display: none;
+}
+
+#memberDescription2 {
+  font-size: 15px;
+  z-index: 3;
+  line-height: 1.5;
+  bottom: 0px;
+}
+
+#selectedFrameImg {
+  transform: scaleX(0%);
+  z-index: 10;
+}
+
+#selectedFrameContent {
+  transform: scaleX(0%);
+}
+
+#selectedFrame_title {
+  font-size: 35px;
+}
+
+#selectedFrame_description {
+  font-size: 14px;
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translate(50%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+.selectedFrameImageOpen {
+  animation: toLeft 0.3s forwards;
+  transform-origin: right;
+}
+
+@keyframes toRight {
+  0% {
+    transform: translateX(-80%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.selectedFrameContentOpen {
+  transform-origin: left;
+  animation: toRight 0.5s forwards;
+}
+
+.closemark {
+  @media (max-width: 991px) {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.video_container {
+  width: 100%;
+  height: 270px;
+  padding: 20px 0;
+}
+
+.video_container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* --------------------------------------------awards section------------------------------------------------------- */
+
+#awards {
+  padding: 100px 0;
+  background-color: #1a1919;
+  overflow: hidden;
+}
+
+.awards_section {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.awards_section h3 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.awards_section p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.carousel_container {
+  padding: 180px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel_wrapper {
+  position: relative;
+  width: 200px;
+  height: 270px;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+  transform: perspective(1400px) rotate(0deg);
+  z-index: -1;
+}
+
+.carousel_wrapper span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.8s;
+  z-index: -1;
+}
+
+.carousel_wrapper span.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel_wrapper span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.8s;
+  overflow: hidden;
+}
+
+.award_carousel_details {
+  display: none;
+}
+
+.carousel_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  color: #000;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  z-index: 5;
+}
+
+.carousel_arrow:hover {
+  background: #FAC657;
+  color: #ffffff;
+}
+
+.left_arrow {
+  left: 20px;
+}
+
+.right_arrow {
+  right: 20px;
+}
+
+.active_card_details {
+  text-align: center;
+  margin-top: -80px;
+}
+
+.active_card_details h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e7e7e7;
+}
+
+.active_card_details p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #dddddd;
+  margin-top: 10px;
+}
+
+/* --------------------------------------------speech section------------------------------------------------------- */
+
+#speech {
+  background-color: #F3F4F6;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+.speech_section {
+  max-width: 1200px;
+}
+
+.speech_header {
+  text-align: center;
+}
+
+.speech_header h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.speech_header p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.speeches_container {
+  display: flex;
+  gap: 10px;
+}
+
+.speech_container {
+  width: calc(50% - 10px);
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.speeches_left {
+  position: relative;
+  width: 100%;
+}
+
+.speeches_video {
+  width: 100%;
+  height: 280px;
+}
+
+.speeches_video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+
+.speeches_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.speeches_label {
+  background-color: #FAC657;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+.speeches_content {
+  border-bottom: 1px solid #E5E7EB;
+  padding-bottom: 20px;
+}
+
+.speeches_content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.speeches_content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1F2937;
+  opacity: 0.8;
+}
+
+.speeches_author {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.speeches_author_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #f1be5a;
+  overflow: hidden;
+}
+
+.speeches_author_img img {
+  width: 100%;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.speeches_author_details h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.speeches_author_details p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1F2937;
+  opacity: 0.8;
+}
+
+/* --------------------------------------------lifeatRA section------------------------------------------------------- */
+
+#lifeAtRA {
+  position: relative;
+}
+
+.dotted_pattern {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  background-image: url(./../images/test/pattern_dots.png);
+  opacity: 0.01;
+  background-size: 10%;
+  z-index: -1;
+}
+
+.lifeAtRA_section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  padding: 0 15px;
+}
+
+.lifeAtRA_carousel {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.lifeAtRA_carousel_left {
+  flex-basis: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.lifeAtRA_carousel_left_item {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
+  color: #000000;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.box_img {
+  top: 26%;
+  left: -10%;
+  width: 180px;
+  height: 480px;
+  position: absolute;
+  background-color: #F4F4F4;
+  z-index: 0;
+}
+
+.lifeAtRA_carousel_right {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  flex-basis: 45%;
+}
+
+.lifeAtRA_carousel_right_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.25s;
+  transform: scale(0.3);
+}
+
+.lifeAtRA_carousel_right_item.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.lifeAtRA_carousel_right_item img {
+  width: 380px;
+}
+
+.lifeAtRA_carousel_right_item button {
+  background: white;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+/* --------------------------------------------news section------------------------------------------------------- */
+
+#News {
+  padding: 100px 10px 50px 10px;
+  color: #fff;
+}
+
+.news_section {
+  max-width: 1200px;
+  padding: 50px 0;
+  position: relative;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.news_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.2;
+  border-radius: 20px;
+}
+
+.news_bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.news_head {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.news_head h3 {
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.news_head p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.news_head a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* ---------------------------------Recap Section---------------------------------------- */
+
+.recap_section {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.recap_container {
+  max-width: 1200px;
+}
+
+.section_title {
+  font-size: 34px;
+  font-weight: 600;
+  color: #333;
+}
+
+.section_subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+
+.recap_content {
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recap_image {
+  width: 40%;
+}
+
+.recap_image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recap_details {
+  width: 53%;
+  text-align: left;
+}
+
+.highlight_list {
+  list-style-type: none;
+}
+
+.highlight_list li {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.highlight_list li::before {
+  content: "✔";
+  font-size: 1rem;
+  color: #ffcc33;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.highlight_list strong {
+  color: #ffcc33;
+}
+
+.cta_button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffcc33;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta_button:hover {
+  background-color: #f7bb06;
+}
+
+
+.recap_footer {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+}
+
+
+/* --------------------------------------------media queries------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  #downloadApp_title2 {
+    font-size: 30px;
+  }
+
+  #relax_points {
+    padding-left: 100px;
+  }
+
+  #relax_points+div {
+    padding-left: 100px;
+  }
+
+  .video_container {
+    width: 100%;
+    height: 310px;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  #selectedFrame_description {
+    font-size: 18px;
+  }
+
+  #selectedFrame_title {
+    font-size: 50px;
+  }
+
+  #memberDescription2 {
+    font-size: 19px;
+  }
+
+  #celebrations_mobile_description {
+    font-size: 22px;
+  }
+
+  .vivek_img {
+    padding-right: 70px;
+  }
+
+  .team_cards {
+    max-height: 330px;
+  }
+
+  #board_title {
+    font-size: 40px;
+  }
+
+  .offer_description {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .offer_titles {
+    font-size: 20px;
+  }
+
+  .stack_img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .stack_cards {
+    height: 250px;
+  }
+
+  #offer_title {
+    font-size: 80px;
+  }
+
+  .scroll_cards_item {
+    height: 400px;
+  }
+
+  #gallery_description {
+    top: 35%;
+    height: 60vh;
+  }
+
+  #gallery_description> :nth-child(2) {
+    font-size: 20px;
+  }
+
+  #gallery_description> :first-child {
+    font-size: 80px;
+  }
+
+  #about_landing::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top right, white 48%, transparent 50%);
+    height: 130px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+
+  #team_description>p:first-child {
+    font-size: 40px;
+  }
+
+  #board_description {
+    font-size: 15px;
+  }
+
+  #about_partner>p:nth-child(2) {
+    font-size: 40px;
+  }
+
+  #relax_description {
+    font-size: 15px;
+  }
+
+  #about_relax h1 {
+    font-size: 40px;
+  }
+
+  #about_landing {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  #about_title {
+    font-size: 80px;
+  }
+
+  #about_description {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  .team_cards {
+    max-height: 500px;
+  }
+
+  .vivek_img {
+    max-height: 600px;
+  }
+
+  .video_container {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #lifeAtRA {
+    display: none;
+  }
+
+  .recap_section {
+    text-align: left;
+  }
+
+  .recap_content {
+    flex-direction: column;
+  }
+
+  .recap_image {
+    width: 100%;
+  }
+
+  .recap_details {
+    width: 100%;
+  }
+
+  .recap_section {
+    padding-bottom: 100px;
+  }
+
+  .recap_container {
+    padding: 0 10px;
+  }
+
+  .section_title {
+    font-size: 28px;
+  }
+
+  .section_subtitle {
+    font-size: 16px;
+  }
+
+  .highlight_list li {
+    font-size: 14px;
+  }
+
+  .highlight_list li::before {
+    font-size: 14px;
+    top: 0px;
+  }
+
+  .recap_footer {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  /* -----------------speech section--------------------- */
+  .awards_section h3 {
+    font-size: 30px;
+  }
+
+  .speech_header h2 {
+    font-size: 30px;
+  }
+
+  .speech_section {
+    padding: 0 15px;
+  }
+
+  .speeches_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .speech_container {
+    width: 100%;
+  }
+
+  .speeches_video{
+    height: 220px;
+  }
+
+  .speeches_left {
+    width: 100%;
+  }
+
+  .speeches_right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .speeches_video iframe,
+  .speeches_video2 iframe {
+    border-radius: 30px;
+  }
+
+  .speeches_content h3 {
+    line-height: 1.3;
+  }
+
+  .carousel_container {
+    padding: 100px 0;
+  }
+
+  .left_arrow {
+    left: 10px;
+  }
+
+  .right_arrow {
+    right: 10px;
+  }
+
+  .active_card_details {
+    margin-top: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #celebrations_mobile {
+    display: none;
+  }
+
+  .lifeAtRA_top_section {
+    font-size: 56px;
+  }
+
+  .lifeAtRA_carousel_left_item {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .lifeAtRA_carousel_right_item img {
+    width: 280px;
+  }
+
+  .recap_section {
+    text-align: left;
+  }
+
+  .recap_content {
+    flex-direction: column;
+  }
+
+  .recap_image {
+    width: 100%;
+  }
+
+  .recap_details {
+    width: 100%;
+  }
+
+  .recap_section {
+    padding-bottom: 100px;
+  }
+
+  .recap_container {
+    padding: 0 10px;
+  }
+
+  .section_title {
+    font-size: 28px;
+  }
+
+  .section_subtitle {
+    font-size: 16px;
+  }
+
+  .highlight_list li {
+    font-size: 14px;
+  }
+
+  .highlight_list li::before {
+    font-size: 14px;
+    top: 0px;
+  }
+
+  .recap_footer {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  /* -----------------speech section--------------------- */
+
+  .speech_section {
+    padding: 0 15px;
+  }
+
+  .speeches_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .speech_container {
+    width: 100%;
+  }
+
+  .speeches_video{
+    height: 320px;
+  }
+
+  .speeches_left {
+    width: 100%;
+  }
+
+  .speeches_right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .speeches_video iframe,
+  .speeches_video2 iframe {
+    border-radius: 30px;
+  }
+
+  .speeches_content h3 {
+    line-height: 1.3;
+  }
+
+  .carousel_container {
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  #celebrations_mobile {
+    display: none;
+  }
+
+  .lifeAtRA_top_section {
+    font-size: 56px;
+  }
+
+  .lifeAtRA_carousel_left_item {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 46px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .lifeAtRA_carousel_right_item img {
+    width: 300px;
+  }
+
+  .recap_container {
+    padding: 0 10px;
+  }
+
+  /* -----------------speech section--------------------- */
+  .speech_section {
+    padding: 0 15px;
+  }
+
+  .speech_container,
+  .speech_container2 {
+    gap: 0px;
+  }
+
+  .carousel_container {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+  .lifeAtRA_top_section {
+    font-size: 80px;
+  }
+
+  .lifeAtRA_carousel_left_item {
+    padding: 0 30px;
+  }
+
+  .title {
+    font-size: 58px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .recap_container {
+    padding: 0 10px;
+  }
+
+  /* -----------------speech section--------------------- */
+  .speech_section {
+    padding: 0 15px;
+  }
+
+  .speech_container,
+  .speech_container2 {
+    gap: 0px;
+  }
+}
+
+
+@media screen and (min-width: 2000px) {
+  .title {
+    font-size: 64px;
+    line-height: 1.4;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .box_img {
+    top: 33%;
+    left: -20%;
+  }
+
+  .lifeAtRA_carousel_right_item {
+    align-items: flex-start;
+  }
+
+  .lifeAtRA_carousel_right_item img {
+    width: 480px;
+  }
+}

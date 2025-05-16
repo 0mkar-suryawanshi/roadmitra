@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://readyassist.in/towing-service-readyassist.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="./fav.png">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/towing.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>24/7 Car & Bike Towing Service Near Me | Flatbed Chain Lifting Towing</title>
+    <meta name="description"
+        content="Need car or bike towing service nearby? We provide 24/7 car & bike towing truck service using flatbed towing & chain lifting towing across India.">
+    <meta name="keywords"
+        content="bike towing, readyassist towing, towing service, flatbed towing, lifting towing, car towing, expert towing, accident recovery, roadside assistance, accident towing, night towing, 24 hours towing, 24/7 towing, car towing, bike towing, car towing service, bike towing service, car towing near me, bike towing near me">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNHVJV5BNL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-CNHVJV5BNL');
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-757512863"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-757512863');
+    </script>
+
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-757512863/YvbaCJHqptgBEJ_1mukC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div data-include="./components/navigationBar.html"></div>
+
+    <main>
+        
+        <div class="loader_parent">
+            <span class="loader"></span>
+        </div>
+
+        <div id="towingHomeScreen">
+            <div class="towingHomeScreen_section mx-auto">
+                <div class="towingHome_left">
+                    <h3>Your Vehicle, Our Priority</h3>
+                    <h1>Fastest Towing Services <br> No hidden charges!
+                    </h1>
+                    <div class="towingHome_price">
+                        <div class="towingHome_priceCard1">
+                            Bike Towing <br> Starts @ <span style="font-family: sans-serif !important;">₹</span>1,250*
+                        </div>
+                        <div class="towingHome_priceCard2">
+                            Car Towing <br> Starts @ <span style="font-family: sans-serif !important;">₹</span>3,500*
+                        </div>
+                    </div>
+                    <span class="towingHome_priceNote">*Prices are exclusive of taxes</span>
+                </div>
+                <div class="towingHome_right">
+                </div>
+            </div>
+            <div id="towingBooking">
+                <div class="towingBooking_section">
+                    <div class="towingBooking_left">
+                        <p>Booking Online</p>
+                        <div class="booking_form">
+                            <input id="mobileNo" type="tel" class="form_input" placeholder="Mobile Number"
+                                name="mobileno" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10"
+                                required autocomplete="off">
+                            <input id="vehicleReg" type="text" class="form_input" placeholder="Vehicle Reg No"
+                                name="vehicle Reg No" required onblur="checkVehicleRegNo()" autocomplete="off">
+                            <div class="form_input">
+                                <input id="vehicleMakeModel" class="form_sug_input" type="text" placeholder="Vehicle Make & Model"
+                                    name="vehicle Make & Model" required autocomplete="off">
+                                <div id="vehicleSuggestions" class="suggestion-box"></div>
+                            </div>
+                            <div class="form_input">
+                                <div class="input_wrapper">
+                                    <input id="pickupLocation" class="form_sug_input" style="flex: 1;padding-right: 30px;" type="text" placeholder="Pickup Location"
+                                        name="pickup" required
+                                        oninput="getLocationSuggestions(this.value, 'pickupSuggestions')" 
+                                        onfocus="clearInput('pickupLocation')" 
+                                        autocomplete="off">
+                                    <button type="button" class="locate_btn" onclick="getCurrentLocation('pickupLocation')"><img src="./assets/images/common/getLocation.svg" alt=""></button>
+                                </div>
+                                <div id="pickupSuggestions" class="suggestion-box"></div>
+                            </div>
+                            <div class="form_input">
+                                <div class="input_wrapper">
+                                    <input id="dropLocation" class="form_sug_input" style="flex: 1;padding-right: 30px;" type="text" placeholder="Drop Location"
+                                        name="drop" required
+                                        oninput="getLocationSuggestions(this.value, 'dropSuggestions')" 
+                                        onfocus="clearInput('dropLocation')" 
+                                        autocomplete="off">
+                                    <button type="button" class="locate_btn" onclick="getCurrentLocation('dropLocation')"><img src="./assets/images/common/getLocation.svg" alt=""></button>
+                                </div>
+                                <div id="dropSuggestions" class="suggestion-box"></div>
+                            </div>                            
+                            <button type="submit" class="book_online_btn"
+                                style="background-color: #ef2e2e;color: white;" onclick="validateForm()">BOOK NOW
+                            </button>
+                        </div>
+                    </div>
+                    <div class="towingBooking_right">
+                        <p>Connect with us</p>
+                        <a href="tel: 8197 852 852 " class="support_btn">
+                            <div class="support_icon">
+                                <img src="./assets/images/towing/support.svg" alt="" class="towing_support">
+                            </div>
+                            <div class="support_text">
+                                <h6>24/7 TOWING SERVICE</h6>
+                                <p>8197 852 852</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="otpVerification">
+                <div class="slotSelection">
+                    <div class="slot-box__heading">When you want?</div>
+                    <span class="select_heading">Select Date</span>
+                    <div class="slot-box__scroll">
+                        <div class="day-slot" onclick="selectDaySlot(this)" data-index="0">
+                            <div class="day-slot__date">Apr 8</div>
+                            <div class="day-slot__divider"></div>
+                            <div class="day-slot__label">Mon</div>
+                        </div>
+                    </div>
+                    <span class="select_heading">Select available slot</span>
+                    <div class="slot-box__scroll">
+                        <div class="time-slot" onclick="selectTimeSlot(this)" data-index="0">
+                            <div class="time-slot__text">09:00 AM</div>
+                        </div>
+                    </div>
+                    <div class="proceed_btn_section">
+                        <button class="proceed_btn" onclick="proceedOtpStep()">Proceed</button>
+                    </div>
+                    <button class="close_btn" onclick="closeSlotSelection()">X</button>
+                </div>
+                <div class="otp-container">
+                    <h2>Verify OTP</h2>
+                    <p>4-digit code sent to <span id="otpMobileNo"></span></p>
+            
+                    <div class="otp-input-container">
+                        <input type="text" maxlength="1" class="otp-input" id="otp1"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off">
+                        <input type="text" maxlength="1" class="otp-input" id="otp2"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off">
+                        <input type="text" maxlength="1" class="otp-input" id="otp3"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off">
+                        <input type="text" maxlength="1" class="otp-input" id="otp4"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off"> 
+                    </div>
+            
+                    <div class="resend-section">
+                        <button class="resend-btn" id="resendBtn" onclick="resendOtp()" disabled>
+                            Resend OTP in <span id="timer">10</span>s
+                        </button>
+                    </div>
+            
+                    <button class="close_btn" onclick="closeOtpVerification()">X</button>
+                    <button class="verify-btn" onclick="verifyOtp()">Verify</button>
+                </div>
+                <div class="orderScreen">
+                    <h5>Your order has been created Successfully</h5>
+                    <p class="order_Id">OrderId : #<span id="orderId">0000</span></p>
+                    <div class="order_amount"></div>
+                    <div class="order_btn_section">
+                        <button class="retry_btn">Proceed to Pay</button>
+                    </div>
+                    <button class="close_btn" onclick="closeOrderScreen()">X</button>
+                </div>
+            </div>
+            <div id="towingCostPopup" class="towing_popup_container">
+                <div class="towing_popup_content">
+                    <h6>Towing Charges Summary</h6>
+                    <div class="towing_popup_details">
+                        <div style="display: flex;justify-content: space-between;">
+                            <p>Total Distance</p>
+                            <p class="total_distance"></p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; text-wrap: nowrap; align-items: flex-start;">
+                            <div style="display: flex; flex-direction: column;">
+                                <p>Service Base charge</p>
+                                <span class="km_covered"></span>
+                            </div>
+                            <p class="service_charges"></p>
+                        </div>
+                        <div class="extra_distance_row" style="display: flex; flex-direction: column; justify-content: space-between;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <p>Extra Distance charge</p>
+                                <p class="perKm"></p>
+                            </div>
+                            <span class="extra_distance_details" style="font-size: 10px;color: #e6e6e6;text-align: left;"></span>
+                        </div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <p>Taxes</p>
+                            <p class="towing_tax"></p>
+                        </div>
+                    </div>
+                    <p class="formula_description"></p>
+                    <p class="total_amount"></p>
+                    <button class="close_btn" onclick="towingDetailsClose()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="towingAboutUs">
+            <div class="towingAboutUs_section">
+                <div class="towingAboutUs_left">
+                    <div class="towingAboutUs_left1">
+                        <div class="towingAboutUs_left1_img">
+                            <img src="./assets/images/towing/car-flatbed.webp" alt="">
+                        </div>
+                        <div class="towingAboutUs_left1_img">
+                            <img src="./assets/images/towing/bike-towing-1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="towingAboutUs_left2">
+                        <div class="towingAboutUs_left2_section1">
+                            <h4><span id="experienceYears"></span> Years</h4>
+                            <p>Experience</p>
+                        </div>
+                        <div class="towingAboutUs_left2_img">
+                            <img src="./assets/images/towing/towing.webp" alt="">
+                        </div>
+                    </div>
+                    <img src="./assets/images/towing/gear_2.svg" alt="" class="aboutus_shape1">
+                    <img src="./assets/images/towing/gear_1.svg" alt="" class="aboutus_shape2">
+                </div>
+                <div class="towingAboutUs_right">
+                    <p>About Us</p>
+                    <h3>24/7 Bike and Car Towing Services</h3>
+                    <h5>Experiencing a vehicle breakdown can be stressful, but having access to reliable towing services
+                        ensures peace of mind. Our 24/7 bike and car towing services are designed to assist you
+                        promptly, ensuring your vehicle is handled with utmost care and transported safely to your
+                        desired location.</h5>
+                    <ul class="aboutus_list">
+                        <li>
+                            <span class="list_bullet">
+                                <img src="./assets/images/towing/check-circle.svg" alt=""></span>
+                            <span>Driving Quality, Ensuring Safety Every Car</span>
+                        </li>
+                        <li>
+                            <span class="list_bullet">
+                                <img src="./assets/images/towing/check-circle.svg" alt=""></span>
+                            <span>Comprehensive Diagnostic Check</span>
+                        </li>
+                        <li>
+                            <span class="list_bullet">
+                                <img src="./assets/images/towing/check-circle.svg" alt=""></span>
+                            <span>We Know Your Car Inside Out</span>
+                        </li>
+                    </ul>
+                    <div class="towingAboutUs_right_btn">
+                        <a class="towingbook_btn" href="#towingHomeScreen">Book Service
+                            →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="knowMore">
+            <div class="knowMore_section mx-auto">
+                <a href="tel: 8197 852 852">
+                    <div class="knowMore_icon">
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+                            <path d="M0 0h48v48H0z" fill="none"></path>
+                            <path
+                                d="M13.25 21.59a30.12 30.12 0 0 0 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8a2 2 0 0 1 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"
+                                fill="#fff" class="fill-fff"></path>
+                        </svg>
+                    </div>
+                </a>
+                <h3>A little care for your great <br> problems</h3>
+                <p>Our 24/7 bike and car towing services are designed to assist you promptly, ensuring your vehicle is
+                    handled with utmost care and transported safely to your desired location.</p>
+                <div class="towingAboutUs_right_btn">
+                    <a href="#towingHomeScreen" class="towingbook_btn">Book Service
+                        →</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="howWeDo">
+            <div class="howWeDo_section mx-auto">
+                <div class="howWedo_head">
+                    <p>OUR PROCESS</p>
+                    <h3>How do we do it</h3>
+                </div>
+
+                <div class="howWeDo_card_section">
+                    <div class="howWeDo_card">
+                        <div class="howWeDo_card_img">
+                            <img src="./assets/images/towing/Towing-Service-1.webp" alt="">
+                        </div>
+                        <div class="howWeDo_card_text">
+                            <p>Check the vehicle & prepare job card with all pre-existing details</p>
+                        </div>
+                        <img class="howDoWe_shape1" src="./assets/images/towing/howDoWe_shape1.svg" alt="">
+                        <img class="howDoWe_shape2" src="./assets/images/towing/howDoWe_shape2.svg" alt="">
+                        <img class="howDoWe_shape3" src="./assets/images/towing/howDoWe_shape3.svg" alt="">
+                    </div>
+                    <div class="howWeDo_card">
+                        <div class="howWeDo_card_img">
+                            <img src="./assets/images/towing/Towing-Service-2.webp" alt="">
+                        </div>
+                        <div class="howWeDo_card_text">
+                            <p>Tow the vehicle carefully & safely to avoid towing damages</p>
+                        </div>
+                        <img class="howDoWe_shape1" src="./assets/images/towing/howDoWe_shape1.svg" alt="">
+                        <img class="howDoWe_shape2" src="./assets/images/towing/howDoWe_shape2.svg" alt="">
+                        <img class="howDoWe_shape3" src="./assets/images/towing/howDoWe_shape3.svg" alt="">
+                    </div>
+                    <div class="howWeDo_card">
+                        <div class="howWeDo_card_img">
+                            <img src="./assets/images/towing/Towing-Service-3.webp" alt="">
+                        </div>
+                        <div class="howWeDo_card_text">
+                            <p>Drop the vehicle safely to the workshop & handover key to the undertaking authority</p>
+                        </div>
+                        <img class="howDoWe_shape1" src="./assets/images/towing/howDoWe_shape1.svg" alt="">
+                        <img class="howDoWe_shape2" src="./assets/images/towing/howDoWe_shape2.svg" alt="">
+                        <img class="howDoWe_shape3" src="./assets/images/towing/howDoWe_shape3.svg" alt="">
+                    </div>
+                    <div class="howWeDo_card">
+                        <div class="howWeDo_card_img">
+                            <img src="./assets/images/towing/maintenance-tips.webp" alt="">
+                        </div>
+                        <div class="howWeDo_card_text">
+                            <p>Provide maintenance tips & recommendations</p>
+                        </div>
+                        <img class="howDoWe_shape1" src="./assets/images/towing/howDoWe_shape1.svg" alt="">
+                        <img class="howDoWe_shape2" src="./assets/images/towing/howDoWe_shape2.svg" alt="">
+                        <img class="howDoWe_shape3" src="./assets/images/towing/howDoWe_shape3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="whyUs">
+            <div class="whyUs_section mx-auto">
+                <div class="howWedo_head">
+                    <p>Whenever & Wherever</p>
+                    <h3>We've got you covered nationwide!</h3>
+                </div>
+                <div class="whyUs_card_section">
+                    <div class="whyUs_card1">
+                        <img src="./assets/images/towing/car-flatbed.webp" alt="">
+                    </div>
+                    <div class="whyUs_card2">
+                        <div class="whyUs_card2_head">
+                            <!-- <h3>Whenever & Wherever</h3>
+                            <p>We've got you covered wherever you go across country!</p> -->
+                        </div>
+                        <div class="whyUs_card2_list_section">
+                            <div class="whyUs_card2_list">
+                                <div class="whyUs_card2_list_left">
+                                    <div class="whyUs_card2_list_img">
+                                        <img src="./assets/images/towing/Fastest-Turn.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="whyUs_card2_list_right">
+                                    <h4>Fastest Turn-Around</h4>
+                                    <p>Over years we have built a strong network of skilled and verified mechanics to
+                                        assist you at the earliest</p>
+                                </div>
+                            </div>
+                            <div class="whyUs_card2_list">
+                                <div class="whyUs_card2_list_left">
+                                    <div class="whyUs_card2_list_img">
+                                        <img src="./assets/images/towing/Onspot-Service.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="whyUs_card2_list_right">
+                                    <h4>One of the Top Rated</h4>
+                                    <p>We are committed towards your safety, and aim at giving the most hassle free
+                                        experience.</p>
+                                </div>
+                            </div>
+                            <div class="whyUs_card2_list">
+                                <div class="whyUs_card2_list_left">
+                                    <div class="whyUs_card2_list_img">
+                                        <img src="./assets/images/towing/Top-Rated.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="whyUs_card2_list_right">
+                                    <h4>On-the-spot support</h4>
+                                    <p>Over years we have built a strong nationwide network of skilled and verified
+                                        mechanics to assist you on spot.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="#towingHomeScreen"  class="towingbook_btn"
+                                style="padding: 7px 20px;">Book
+                                Service</a>
+                        </div>
+                    </div>
+                    <div class="whyUs_card3">
+                        <img src="./assets/images/towing/bike-towing2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="customerReview">
+            <div class="customer_review_section mx-auto">
+                <div class="customerReview_head">
+                    <p>Customer Review</p>
+                    <h3>What customers Say About Us</h3>
+                </div>
+                <div class="customerReview_container">
+                    <div class="wrapper">
+                        <ul class="carousel">
+                            <li class="card">
+                                <div class="card_inner">
+                                    <div class="customerReview_card_rating">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                    </div>
+                                    <p>When my car broke down on the highway, I contacted ReadyAssist. Their response
+                                        was swift, and the technician
+                                        was both professional and courteous. They safely transported my vehicle to the
+                                        nearest repair shop, turning
+                                        a stressful situation into a manageable one. Highly recommended! </p>
+                                    <div class="customerReview_card_footer">
+                                        <div class="cx_testi_img">
+                                            <img src="./assets/images/common/icons/user.webp" alt="user avatar1"
+                                                draggable="false" loading="lazy">
+                                        </div>
+                                        <div style="line-height: 1.2;">
+                                            <h6>Ram Kumar</h6>
+                                            <span>Customer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_inner">
+                                    <div class="customerReview_card_rating">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                    </div>
+                                    <p>I had a flat tire late at night and was stranded alone. ReadyAssist towing
+                                        service has arrived promptly and
+                                        ensured my safety throughout the process. Their efficient service and genuine
+                                        concern for my well-being were
+                                        truly commendable.</p>
+                                    <div class="customerReview_card_footer">
+                                        <div class="cx_testi_img">
+                                            <img src="./assets/images/common/icons/user.webp" alt="user avatar1"
+                                                draggable="false" loading="lazy">
+                                        </div>
+                                        <div style="line-height: 1.2;">
+                                            <h6>Shiva Kumar</h6>
+                                            <span>Customer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_inner">
+                                    <div class="customerReview_card_rating">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                    </div>
+                                    <p>After an accident, I needed my car towed to a body shop. They handled my vehicle
+                                        with utmost care and
+                                        provided clear information about the process. Their professionalism gave me
+                                        peace of mind during a
+                                        challenging time.</p>
+                                    <div class="customerReview_card_footer">
+                                        <div class="cx_testi_img">
+                                            <img src="./assets/images/common/icons/user.webp" alt="user avatar1"
+                                                draggable="false" loading="lazy">
+                                        </div>
+                                        <div style="line-height: 1.2;">
+                                            <h6>Vijayalakshmi</h6>
+                                            <span>Customer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_inner">
+                                    <div class="customerReview_card_rating">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                    </div>
+                                    <p>My SUV wouldn't start in my driveway, I have searched for car towing service near
+                                        me and I needed it towed to
+                                        the dealership. I have booked service with ReadyAssist and they have arrived on
+                                        time, and the driver was
+                                        friendly and knowledgeable. The service was seamless from start to finish.</p>
+                                    <div class="customerReview_card_footer">
+                                        <div class="cx_testi_img">
+                                            <img src="./assets/images/common/icons/user.webp" alt="user avatar1"
+                                                draggable="false" loading="lazy">
+                                        </div>
+                                        <div style="line-height: 1.2;">
+                                            <h6>Samantha L</h6>
+                                            <span>Customer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_inner">
+                                    <div class="customerReview_card_rating">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                        <img src="./assets/images/Dashcam/star.svg" alt="star icon" loading="lazy">
+                                    </div>
+                                    <p>I was impressed with the prompt and efficient car towing Service from
+                                        ReadyAssist. They arrived within 30
+                                        minutes of my call and towed my car to my preferred mechanic without any issues.
+                                        Exceptional service!</p>
+                                    <div class="customerReview_card_footer">
+                                        <div class="cx_testi_img">
+                                            <img src="./assets/images/common/icons/user.webp" alt="user avatar1"
+                                                draggable="false" loading="lazy">
+                                        </div>
+                                        <div style="line-height: 1.2;">
+                                            <h6>Bharath R</h6>
+                                            <span>Customer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cx_carousel_btns">
+                        <div class="leftbtn">
+                            <button id="left" class="cx_carousel_btn">←</button>
+                        </div>
+                        <div class="rightbtn">
+                            <button id="right" class="cx_carousel_btn">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq">
+            <div class="faq_section mx-auto">
+                <div class="faq_head">
+                    <p>Have Any Question</p>
+                    <h3>Frequently Asked Question</h3>
+                </div>
+                <div class="faq_details_section">
+                    <div class="faq_left_section">
+                        <div class="faqs_container">
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        What types of vehicles can you tow?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    Our towing capabilities encompass a broad spectrum of vehicles, including scooters,
+                                    motorcycles, sedans, and SUVs. Our adaptable equipment is meticulously designed to
+                                    accommodate various vehicle types, ensuring safe and efficient transportation.
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        How quickly can you reach me in case of a breakdown?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    Our arrival time depends on your location and current traffic conditions. However,
+                                    we aim to reach our customers promptly, typically within 30 minutes.
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        What are your towing charges?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    Our towing fees are influenced by several factors, including the type of vehicle,
+                                    the distance to be towed, and the specific services required. For a precise quote,
+                                    we recommend reaching out to us directly @ +91 8197-852-852, with your vehicle's
+                                    details and current location.
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        Can your tow vehicles involved in accidents?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    Yes, we offer towing services for vehicles involved in accidents. Our team is
+                                    trained to handle such situations with care and professionalism, ensuring your
+                                    vehicle is transported safely to the designated location.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq_right_section">
+                        <div class="faqs_container">
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        Are your towing services available 24/7?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    Yes, we offer round-the-clock towing services to ensure assistance is available
+                                    whenever you need it, regardless of the time or day.
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        How do you ensure the safety of my vehicle during towing?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    We use specialized equipment, such as flatbed tow trucks and secure strapping
+                                    mechanisms, to ensure your vehicle is safely loaded and transported without damage.
+                                </p>
+                            </div>
+
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        Do I need to be present during the towing process?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    While we prefer our customers to be present to provide necessary information and
+                                    access during the towing process,
+                                    we understand that circumstances may not always allow for this. <br>
+                                    In such situations, we can arrange to tow your vehicle with your prior
+                                    authorization, ensuring all necessary details
+                                    are communicated beforehand.
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_ques">
+                                    <h6 class="faq_title">
+                                        How do I request a towing service?
+                                    </h6>
+                                    <button class="faq-toggle">
+                                        <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                        <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                    </button>
+                                </div>
+                                <p class="faq_text">
+                                    You can request our towing services by contacting us through our hotline
+                                    +91-8197-852-852 or via our website www.readyassist.in. Provide us with your
+                                    location, vehicle details, and the nature of the issue, and we will dispatch a tow
+                                    truck to assist you promptly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-include="./components/downloadApp.html"></div>
+
+    </main>
+
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/componentLoader.js"></script>
+    <script type="module" src="./assets/js/common.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script type="module" src="./assets/js/towing.js"></script>
+
+</body>
+
+</html>

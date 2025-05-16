@@ -1,0 +1,487 @@
+#mecplus_landing {
+    background: linear-gradient(#154685d5, #154685d5),
+      url(./../images/about_us/about2.jpg);
+    background-size: cover;
+    min-height: calc(100vh - 65px);
+  }
+  
+  #mecplus_landing > div {
+    height: calc(100vh - 65px);
+  }
+  
+  #mec_content h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  
+  #mec_content > :first-child {
+    font-size: 12px;
+  }
+  
+  #mec_content > :nth-child(3) {
+    font-size: 20px;
+  }
+  
+  #mec_content > :nth-child(4) {
+    font-size: 12px;
+  }
+  
+  #mec_content {
+    height: fit-content;
+  }
+  
+  .downloadapp_btn {
+    border-radius: 10px;
+    background-color: #154685d5;
+    border: 1px solid white;
+    color: White;
+    transition: 0.3s;
+    font-size: 22px;
+  }
+  
+  .downloadapp_btn img {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .downloadapp_btn:hover {
+    background-color: white;
+    border: 1px solid #154685d5;
+    color: #154685d5;
+    transform: scale(1.1);
+  }
+  
+  .downloadapp_btn:hover img {
+    background-color: #154685d5;
+    border-radius: 50%;
+  }
+  
+  #mecplus_benefits {
+    background-color: #fbfbf2;
+  }
+  
+  #mecplus_benefits h2 {
+    line-height: 100%;
+    font-size: 30px;
+  }
+  
+  #mecplus_description {
+    line-height: 150%;
+    font-size: 12px;
+  }
+  
+  .more_info_btn {
+    background-color: #39b54a;
+    border-radius: 30px;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 12px;
+  }
+  
+  .more_info_btn img {
+    width: 15px;
+    right: 10px;
+    opacity: 0;
+    padding-top: 3px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .more_info_btn:hover img {
+    right: 2px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mecplus_cardContainer {
+    padding: 10px;
+  }
+  
+  .mecplus_cardContainer p {
+    font-size: 14px;
+  }
+  
+  #iso_seg img {
+    width: 100px;
+  }
+  
+  .team_highlight img {
+    width: 100px;
+  }
+  
+  .team_highlight {
+    padding: 20px;
+    background-color: #242b2c;
+    color: white;
+  }
+  
+  #team_title p:first-child {
+    font-size: 20px;
+    color: #288754;
+  }
+  
+  #team_title p:nth-child(2) {
+    line-height: 100%;
+    font-size: 30px;
+  }
+  
+  #mecplus_team {
+    background-color: rgb(255, 249, 252);
+  }
+  
+  .team_download > :nth-child(1) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .team_download > :nth-child(2) {
+    font-size: 12px;
+  }
+  
+  .langText {
+    color: rgba(128, 128, 128, 0.8);
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+  
+  .langText:hover {
+    color: rgb(0, 0, 116);
+    /* transform: scale(1.1); */
+    transform-origin: left;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .langTextActive {
+    color: black;
+    /* transform: scale(1.1); */
+    transform-origin: left;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  #rewards {
+    background-color: rgb(255, 240, 224);
+  }
+  
+  #rewards_Title {
+    font-size: 30px;
+    line-height: 105%;
+  }
+  
+  .reward_name {
+    font-size: 20px;
+    color: #f7941d;
+    text-transform: uppercase;
+    line-height: 105%;
+  }
+  
+  .reward_points {
+    font-size: 20px;
+    color: #818285;
+  }
+  
+  .reward_points + p {
+    color: #818285;
+    font-size: 16px;
+  }
+  
+  #become_sp h3 {
+    font-size: 30px;
+    line-height: 105%;
+  }
+  
+  .eligibility p {
+    font-size: 17px;
+  }
+  
+  .eligibility img {
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  #requirements > :first-child {
+    font-size: 30px;
+    background-color: darkblue;
+    /* background-color: rgb(56, 0, 139); */
+  }
+  
+  .requirement p {
+    background-color: darkblue;
+    font-size: 25px;
+  }
+  
+  .sign {
+    font-size: 50px;
+    color: darkblue;
+  }
+  
+  .earningSteps img {
+    max-width: 270px;
+    width: 75%;
+  }
+  
+  #digital_platform {
+    background-color: black;
+  }
+  
+  #instantAmount {
+    font-size: 30px;
+  }
+  
+  #earning_banner {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bannerbg {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 300%;
+    height: 300%;
+    background-image: radial-gradient(#c0203e, #921929);
+    z-index: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .application-play-btn {
+    cursor: pointer;
+    width: 185px;
+    background-color: #2a2a2a;
+    border-radius: 7px;
+    overflow: hidden;
+    color: white;
+    transition: 0.5s;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .application-play-btn:hover, .application-play-btn span:hover {
+    color: white !important;
+    background-color: #741830;
+  }
+  
+  .application-play-btn img {
+    width: 40px;
+    position: relative;
+  }
+  
+  .application-play-btn .btn-content {
+    display: inline-block;
+  
+    span {
+      font-size: 10px;
+      /* color: #ffffff; */
+    }
+  }
+  
+  .application-play-btn .btn-content span {
+    font-size: 10px;
+  }
+  
+  #download_application > p:first-child {
+    font-size: 20px;
+  }
+  
+  #download_application > p:nth-child(3) {
+    font-size: 30px;
+  }
+  
+  #download_application > img:nth-child(4) {
+    max-width: 300px;
+    background-color: white;
+    width: 50%;
+  }
+  
+  #rsa_clients > p:first-child {
+    line-height: 100%;
+    font-size: 25px;
+  }
+  
+  .brand_img {
+    filter: grayscale(100%);
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .sister_img2 {
+    max-width: 100px;
+    width: 100%;
+  }
+  
+  #sister_companies > div {
+    border: 1px solid rgb(220, 220, 220);
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  
+  #sister_title {
+    font-size: 20px;
+    line-height: 100%;
+  }
+  
+  #guide_title {
+    font-size: 30px;
+    line-height: 100%;
+  }
+  
+  #guide_description {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .sister_img2 {
+      max-width: 150px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .col-md-22 {
+      width: 22% !important;
+    }
+  
+    .col-md-4per {
+      width: 4% !important;
+    }
+  
+    .justify-md-between {
+      justify-content: space-between;
+    }
+  
+    .reward_name {
+      font-size: 23px;
+    }
+  
+    .reward_points {
+      font-size: 23px;
+    }
+  
+    #mec_content h1 {
+      font-size: 50px;
+    }
+  
+    #mec_content > :nth-child(3) {
+      font-size: 30px;
+    }
+  
+    #mec_content > :nth-child(4) {
+      font-size: 15px;
+    }
+  
+    .team_download > :nth-child(1) {
+      font-size: 30px;
+    }
+  
+    .team_download > :nth-child(2) {
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 991px) {
+    #guide_description {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  
+    #guide_title {
+      font-size: 40px;
+    }
+  
+    #sister_title {
+      font-size: 25px;
+    }
+  
+    #rsa_clients > p:first-child {
+      font-size: 40px;
+    }
+  
+    .bannerbg {
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      width: 150%;
+      height: 150%;
+      background-image: radial-gradient(#c0203e, #921929);
+      z-index: 0;
+      position: absolute;
+      top: 0;
+    }
+  
+    #instantAmount {
+      font-size: 40px;
+    }
+  
+    .earningSteps p {
+      font-size: 20px;
+    }
+  
+    #requirements > :first-child {
+      font-size: 40px;
+    }
+  
+    #become_sp h3 {
+      font-size: 40px;
+    }
+  
+    #rewards_Title {
+      font-size: 40px;
+    }
+  
+    #team_title p:nth-child(2) {
+      font-size: 40px;
+    }
+  
+    .mecplus_cardContainer {
+      padding: 30px;
+    }
+  
+    .mecplus_cardContainer p {
+      font-size: 16px;
+    }
+  
+    .more_info_btn {
+      font-size: 15px;
+    }
+  
+    #mecplus_benefits h2 {
+      font-size: 40px;
+    }
+  
+    #mecplus_description {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    #download_application > p:first-child {
+      font-size: 30px;
+    }
+  
+    .team_highlight p:first-child {
+      font-size: 22px;
+    }
+  
+    #mec_content > :first-child {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    #mec_content > :first-child {
+      font-size: 22px;
+    }
+  
+    #mec_content h1 {
+      font-size: 80px;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #mecplus_landing {
+      height: 100% !important;
+      min-height: 100% !important;
+    }
+  
+    #mecplus_landing > div {
+      padding: 100px 0px;
+      height: 100%;
+    }
+  }

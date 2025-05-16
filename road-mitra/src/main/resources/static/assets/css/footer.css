@@ -1,0 +1,135 @@
+/* footer */
+
+
+#footer {
+    z-index: 0;
+    background-size: cover;
+    background-image: url(./../images/footer/footer-ground2.webp);
+    margin-top:50px;
+  }
+
+  #footer a{
+    color:White;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  #footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, white 48%, transparent 50%);
+    height: 100px;
+    z-index: -1;
+  }
+  
+  #footerTop_Card {
+    color: aliceblue;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./../images/footer/footerbg2.svg);
+    background-position: top 70% right 100%;
+    position: relative;
+    top: -20px;
+  }
+  
+  #footerTop_Card p {
+    line-height: 1.5;
+    color: aliceblue;
+    font-size: 14px;
+  }
+  
+  #footerTop_Card h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  
+  #footerTop_Card button {
+    background-color: #ffcc33;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  
+  
+  
+  #social_links {
+    gap: 8px;
+  }
+  
+  
+  #quickLinks>div {
+    width: fit-content;
+  }
+  
+  .social_icons {
+    background-color: #3d423c;
+    border-radius: 50%;
+    transition: .3s;
+    padding: 3px;
+    width:30px;
+    height:30px;
+  }
+  
+  .social_icon1:hover {
+    background-color: #1778f2;
+    transform: scale(1.15)
+  }
+  
+  .social_icon2:hover {
+    background-color: #0072b1;
+    transform: scale(1.15)
+  }
+  
+  .social_icon3:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    transform: scale(1.15)
+  }
+  
+  .social_icon4:hover {
+    background-color: #26cc64;
+    transform: scale(1.15)
+  }
+  
+  .social_icon5:hover {
+    background-color: #ed0000;
+    transform: scale(1.15)
+  }
+  
+  #footerBottom h2 {
+    font-size: 14px;
+  }
+  
+  .footerText1 {
+    font-size: 14px;
+  }
+
+  #reachUs img{
+    width:20px;
+    height:20px;
+  }
+
+
+
+  
+  
+  @media only screen and (min-width:991px) {
+  
+    #quickLinks {
+      justify-content: end;
+    }
+  
+    #reachUs {
+      justify-content: center;
+    }
+  
+  }
+  
+  
+  

@@ -1,0 +1,1964 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #010f34;
+    --bg-color: #394C72;
+    --heading-color: #01133c;
+    --gray1: #666666;
+    --ternary-color: #88a5ad;
+    --accent-color: #ffcc33;
+    --gray-color: #f5f7fa;
+    --gray2-color: #e8ebee;
+    --border-color: #ecf1f5;
+    --box-shadow-primary: 0 0 25px rgba(31, 31, 31, 0.08);
+    --bg_gray: #f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+
+.loader_parent {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.577);
+    z-index: 99;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    animation: rotate 4s linear infinite;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    display: hidden;
+    border: 24px solid;
+    border-color: transparent transparent #fff #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: mvx 1s infinite ease-in;
+}
+
+.loader:before {
+    left: -1px;
+    top: 1px;
+    border-color: #ffcc33 #ffcc33 transparent transparent;
+    animation-name: mvrx;
+}
+
+/* --------------------------------------Home Screen----------------------------------------------- */
+
+#towingHomeScreen {
+    background-color: var(--bg-color);
+    padding: 100px 0;
+    background-image: url('./../images/towing/towing-banner-car.webp');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right 0px top 50%;
+    position: relative;
+    height: 100%;
+    min-height: 55vh;
+    transition: background-image 1s ease-in-out, opacity 0.5s;
+}
+
+.towingHomeScreen_section {
+    min-height: inherit;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.towingHome_left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.towingHome_left h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.towingHome_left h1 {
+    margin-top: 5px;
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.towingHome_left p {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white-color);
+}
+
+.towingbook_btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--accent-color);
+    color: var(--black-colorr);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 1px;
+    text-decoration: none;
+}
+
+.towingHome_right {
+    width: 40%;
+}
+
+.towingHome_price {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.towingHome_priceCard1,
+.towingHome_priceCard2 {
+    background-color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: var(--box-shadow-primary);
+}
+
+.towingHome_priceCard1 {
+    color: #d02558;
+}
+
+.towingHome_priceCard2 {
+    color: #c36232;
+}
+
+.towingHome_priceNote {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #d0d0d0;
+}
+
+/* --------------------------------------booking section----------------------------------------------- */
+
+#towingBooking {
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+}
+
+.towingBooking_section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.towingBooking_left {
+    padding: 20px;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow-primary);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.towingBooking_left p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.booking_form {
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form_input {
+    width: calc(33.333% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--bg_gray);
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 14px;
+}
+
+.input_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.locate_btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.locate_btn img{
+    width: 18px;
+}
+
+.form_sug_input {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.book_online_btn {
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    border: none;
+    min-height: 41px;
+    padding: 0px 20px;
+    width: calc(33.333% - 20px);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+.book_online_btn:disabled,
+.book_online_btn.disabled {
+  background-color: #d3d3d3 !important;
+  cursor: not-allowed;
+}
+
+.towingBooking_right {
+    padding: 20px;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow-primary);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.towingBooking_right p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.support_btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.support_icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support_text h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+
+.support_text p {
+    font-size: 26px !important;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.towing_summary {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-color);
+    box-shadow: var(--box-shadow-primary);
+    padding: 5px 10px;
+}
+
+.towing_summary p {
+    margin-top: 3px;
+    color: var(--black-color) !important;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.towing_summary span {
+    color: var(--bg-color) !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.towing_summary img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.tollParking {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--gray1);
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.towing_popup_container {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: #000000b4;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.towing_popup_content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 350px;
+    min-height: 400px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fade_in 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.towing_popup_content h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.towing_popup_details {
+    margin-top: 10px;
+}
+
+.towing_popup_details p {
+    color: var(--white-color);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.towing_popup_content .total_amount {
+    margin-top: 15px;
+    color: var(--accent-color);
+    text-wrap: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.towing_popup_content .formula_description {
+    font-size: 14px;
+    color: #e6e6e6;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.towing_popup_content .close_btn {
+    padding: 5px 10px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.towing_popup_content .close_btn:hover {
+    background: #c9302c;
+}
+
+.km_covered {
+    text-align: left;
+    font-size: 10px;
+    color: #e6e6e6;
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* --------------------------------------About Us----------------------------------------------- */
+
+#towingAboutUs {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.towingAboutUs_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.towingAboutUs_left {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.towingAboutUs_left1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.towingAboutUs_left1_img {
+    width: 100%;
+    min-height: 230px;
+}
+
+.towingAboutUs_left1_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.towingAboutUs_left2 {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.towingAboutUs_left2_section1 h4 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #bbbbbb;
+    line-height: 0.8;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.towingAboutUs_left2_section1 h4 span {
+    color: var(--bg-color);
+    font-size: 76px;
+    font-weight: 800;
+}
+
+.towingAboutUs_left2_section1 p {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+
+.towingAboutUs_left2_img {
+    width: 100%;
+    min-height: 330px;
+    height: auto;
+    overflow: hidden;
+}
+
+.towingAboutUs_left2_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.towingAboutUs_left2_section3 a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.callus_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fefae5;
+}
+
+.towingAboutUs_left2_section3 p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.aboutus_shape1 {
+    z-index: -1;
+    top: 10%;
+    left: -7%;
+    position: absolute;
+    -webkit-animation: circular-rotation 30s linear infinite;
+    animation: circular-rotation 30s linear infinite;
+    animation-direction: reverse;
+}
+
+.aboutus_shape2 {
+    z-index: -1;
+    top: 35%;
+    left: -10%;
+    position: absolute;
+    -webkit-animation: circular-rotation 30s linear infinite;
+    animation: circular-rotation 30s linear infinite;
+    animation-direction: reverse;
+}
+
+@keyframes circular-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.towingAboutUs_right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.towingAboutUs_right p {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--bg-color);
+    line-height: 1.8;
+}
+
+.towingAboutUs_right h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-top: 10px;
+    line-height: 1.1;
+}
+
+.towingAboutUs_right h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray1);
+    margin-top: 20px;
+}
+
+.aboutus_list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.aboutus_list li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    color: var(--black-color);
+    font-weight: 500;
+    line-height: 0;
+}
+
+.list_bullet {
+    margin-top: 3px;
+}
+
+/* ---------------------------------------------------knowMore------------------------------------------------- */
+
+#knowMore {
+    padding: 100px 0;
+    margin: 50px 0;
+    margin-bottom: 0;
+    background: url('./../images/towing/towing-truck-bg-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.knowMore_section {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.knowMore_icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+}
+
+.knowMore_section h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.knowMore_section p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+
+/* -------------------------------------- howWeDo ----------------------------------------------- */
+
+#howWeDo {
+    background-image: url('./../images/towing/howWedo_bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    margin: 50px 0;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.howWeDo_section {
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.howWedo_head {
+    width: 100%;
+    text-align: center;
+}
+
+.howWedo_head p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.howWedo_head h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.howWeDo_card_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    z-index: 0;
+    position: relative;
+    padding: 100px 0;
+}
+
+.howWeDo_card {
+    width: calc(25% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    min-height: 270px;
+    position: relative;
+}
+
+.howWeDo_card_img {
+    height: 80px;
+}
+
+.howWeDo_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.howWeDo_card_text {
+    margin-top: 20px;
+    color: var(--gray1);
+}
+
+.howDoWe_shape1 {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: -1;
+}
+
+.howDoWe_shape2 {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: -1;
+}
+
+.howDoWe_shape3 {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+}
+
+/* -------------------------------------- whyUs ----------------------------------------------- */
+
+#whyUs {
+    padding: 50px 0;
+}
+
+.whyUs_section {
+    max-width: 1200px;
+}
+
+.whyUs_card_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 70px;
+}
+
+.whyUs_card1 {
+    width: 30%;
+    position: relative;
+}
+
+.whyUs_card1 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.whyUs_card1::after {
+    left: -25px;
+    top: -25px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent-color);
+    position: absolute;
+    z-index: -1;
+}
+
+.whyUs_card3 {
+    width: 30%;
+    position: relative;
+}
+
+.whyUs_card3 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.whyUs_card3::after {
+    right: -25px;
+    bottom: -25px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent-color);
+    position: absolute;
+    z-index: -1;
+}
+
+.whyUs_card2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whyUs_card2_head p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray1);
+    text-align: center;
+}
+
+.whyUs_card2_head h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.whyUs_card2_list_section {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.whyUs_card2_list {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whyUs_card2_list_left {
+    width: fit-content;
+}
+
+.whyUs_card2_list_right {
+    width: 80%;
+}
+
+.whyUs_card2_list_img {
+    background-color: var(--bg_gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.whyUs_card2_list_img img {
+    width: 35px;
+}
+
+.whyUs_card2_list_right h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.whyUs_card2_list_right p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray1);
+}
+
+/* ---------------------------------------------------customer review------------------------------------------------- */
+
+#customerReview {
+    padding: 50px 0;
+    margin: 50px 0;
+    background: url('./../images/towing/towing-truck-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.customer_review_section {
+    max-width: 1200px;
+    position: relative;
+}
+
+.customerReview_head {
+    text-align: center;
+}
+
+.customerReview_head p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.customerReview_head h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.customerReview_container {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.cx_carousel_btns {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel .card {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    list-style: none;
+    cursor: pointer;
+    width: 33.333%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.carousel .card .card_inner {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    padding: 30px 40px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow-primary);
+    margin: 20px;
+    min-height: 290px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.customerReview_card_footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cx_testi_img {
+    left: -19px;
+    top: 20px;
+    z-index: 1;
+    background: var(--ternary-color);
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.cx_testi_img img {
+    width: 30px;
+}
+
+.customerReview_card_footer h6 {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--heading-color);
+}
+
+.customerReview_card_footer span {
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--gray1);
+}
+
+.carousel .card p {
+    color: var(--gray1);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.cx_carousel_btn {
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    outline: none;
+}
+
+/* ---------------------------------------------------FAQ------------------------------------------------- */
+
+#faq {
+    padding: 50px 0 100px 0;
+    position: relative;
+}
+
+.faq_section {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq_details_section {
+    display: flex;
+    gap: 50px;
+}
+
+.faq_left_section {
+    width: 50%;
+}
+
+.faq_right_section {
+    width: 50%;
+}
+
+.faq_right_section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.faq_head {
+    text-align: center;
+}
+
+.faq_head p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.faq_head h3 {
+    margin-top: 5px;
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.faqs_container {
+    padding-top: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 1px solid #e4e4e4;
+    background-color: var(--bg_gray);
+    border-radius: 5px;
+}
+
+.faq_ques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq_title {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 90%;
+}
+
+.faq_text {
+    display: none;
+    margin: 20px 0 0;
+    font-size: 14px;
+    color: var(--gray1);
+    font-weight: 400;
+}
+
+.faq_title,
+.faq_text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.faq.active .faq_text {
+    display: block;
+}
+
+.faq-toggle {
+    border: none;
+    background-color: var(--black-color);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.faq-toggle:focus {
+    outline: none;
+}
+
+.faq-toggle .down_icon {
+    display: none;
+}
+
+.faq.active .faq-toggle .down_icon {
+    display: block;
+}
+
+.faq.active .faq-toggle .right_icon {
+    display: none;
+}
+
+/* --------------------------------------booking----------------------------------------------- */
+
+.suggestion-box {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    display: none;
+}
+
+.suggestion-box .suggestion-item {
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-box .suggestion-item:hover {
+    background: #f0f0f0;
+}
+
+.suggestion-box .suggestion-item:last-child {
+    border-bottom: none;
+}
+
+
+#otpVerification {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: #000000b4;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.otp-container,
+.orderScreen,
+.slotSelection {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 350px;
+    min-height: 400px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.otp-container h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.otp-container p {
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.otp-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    color: black;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.otp-input:focus {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.resend-section {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.resend-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.verify-btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    background: var(--accent-color);
+    border: none;
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.orderScreen h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: 600;
+}
+
+.order_Id {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.order_amount {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.order_btn_section ,.proceed_btn_section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.retry_btn {
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.proceed_btn{
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.close_btn {
+    background-color: black;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: var(--white-color);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.slot-box__heading {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.select_heading{
+    color: var(--white-color);
+    text-align: left !important;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.slot-box__scroll {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.day-slot {
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5e5e5;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.day-slot__date {
+    color: #262626;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+}
+
+.day-slot__divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: auto;
+}
+
+.day-slot__label {
+    width: 100%;
+    height: 1.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/* Active Day Slot */
+.day-slot.active {
+    border-color: var(--accent-color);
+}
+
+.day-slot.active .day-slot__label {
+    background-color: var(--accent-color);
+}
+
+.time-slot {
+    flex-shrink: 0;
+    min-width: 2.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.time-slot__text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+   
+}
+
+.time-slot.active {
+    background-color: var(--heading-color);
+    color: var(--white-color);
+} 
+  
+
+/* ---------------------------------------------------FAQ------------------------------------------------- */
+
+
+@media screen and (max-width: 600px) {
+
+    .towingHome_priceCard1,
+    .towingHome_priceCard2 {
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .towingHome_priceNote {
+        margin-top: 0px;
+        font-size: 10px;
+    }
+
+    #towingHomeScreen {
+        min-height: unset;
+        padding: 50px 0;
+        background-position: right 0px top 20%;
+    }
+
+    .towingHomeScreen_section {
+        flex-direction: column;
+        align-items: start;
+        padding: 0 15px;
+    }
+
+    .towingHome_left {
+        width: 65%;
+    }
+
+    .towingHome_left h3 {
+        font-size: 12px;
+    }
+
+    .towingHome_left h1 {
+        font-size: 20px;
+    }
+
+    .towingHome_left p {
+        font-size: 13px;
+    }
+
+    .towingBooking_section {
+        flex-direction: column;
+    }
+
+    #towingBooking {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
+        transform: unset;
+    }
+
+    .booking_form {
+        gap: 20px;
+    }
+
+    .form_input {
+        width: calc(50% - 10px);
+    }
+
+    .book_online_btn {
+        width: calc(50% - 10px);
+    }
+
+    .towing_summary p {
+        font-size: 12px;
+    }
+
+    .towingBooking_left {
+        width: 100%;
+    }
+
+    .towingBooking_right {
+        width: 100%;
+    }
+
+    #towingAboutUs {
+        padding-top: 50px;
+    }
+
+    .towingAboutUs_section {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .towingAboutUs_left {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .towingAboutUs_left2_section1 h4 {
+        font-size: 28px;
+    }
+
+    .towingAboutUs_left2_section1 p {
+        font-size: 26px;
+    }
+
+    .towingAboutUs_right {
+        width: 100%;
+    }
+
+    .towingAboutUs_left1_img {
+        min-height: 200px;
+    }
+
+    .towingAboutUs_left2_img {
+        min-height: 270px;
+    }
+
+    .towingAboutUs_right h3 {
+        font-size: 24px;
+    }
+
+    .knowMore_section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .knowMore_section h3 {
+        font-size: 24px;
+    }
+
+    .howWedo_head h3 {
+        font-size: 24px;
+    }
+
+    .howWeDo_card_section {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .howWeDo_card_section {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .howWeDo_card {
+        width: 100%;
+    }
+
+    .whyUs_card_section {
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .whyUs_card1,
+    .whyUs_card3,
+    .whyUs_card2 {
+        width: 100%;
+    }
+
+    .customerReview_head h3 {
+        font-size: 24px;
+    }
+
+    .customerReview_container {
+        padding-top: 20px;
+    }
+
+    .carousel .card {
+        width: 100%;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+
+    .faq_head h3 {
+        font-size: 24px;
+    }
+
+    .faq_details_section {
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .faq_left_section,
+    .faq_right_section {
+        width: 100%;
+    }
+
+    .faqs_container {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+    #towingHomeScreen {
+        min-height: unset;
+        padding: 50px 0;
+        background-position: right 0px top 20%;
+    }
+
+    .towingHomeScreen_section {
+        flex-direction: column;
+        align-items: start;
+        padding: 0 15px;
+    }
+
+    .booking_form {
+        gap: 20px;
+    }
+
+    .form_input {
+        width: calc(50% - 10px);
+    }
+
+    .book_online_btn {
+        width: calc(50% - 10px);
+    }
+
+    .towingHome_left {
+        width: 80%;
+    }
+
+    .towingBooking_section {
+        flex-direction: column;
+    }
+
+    #towingBooking {
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
+        transform: unset;
+    }
+
+    .towingBooking_left {
+        width: 100%;
+    }
+
+    .towingBooking_right {
+        width: 100%;
+    }
+
+    .towingAboutUs_section {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .towingAboutUs_left {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .towingAboutUs_right {
+        width: 100%;
+    }
+
+    .knowMore_section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .howWeDo_card_section {
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .howWeDo_card_section {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .howWeDo_card {
+        width: calc(50% - 45px);
+    }
+
+    .whyUs_card_section {
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .whyUs_card1,
+    .whyUs_card3,
+    .whyUs_card2 {
+        width: 100%;
+    }
+
+    .customerReview_container {
+        padding-top: 20px;
+    }
+
+    .carousel .card {
+        width: 100%;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+
+    .faq_details_section {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    #towingHomeScreen {
+        background-position: right 0px top 20%;
+    }
+
+    .towingHomeScreen_section {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .towingHome_left {
+        width: 100%;
+    }
+
+    .towingBooking_section {
+        flex-direction: column;
+    }
+
+    #towingBooking {
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .towingBooking_left {
+        width: 100%;
+    }
+
+    .towingBooking_right {
+        width: 100%;
+    }
+
+    .towingAboutUs_section {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .towingAboutUs_left {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .towingAboutUs_right {
+        width: 100%;
+    }
+
+    .knowMore_section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .howWeDo_card_section {
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .howWeDo_card_section {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .howWeDo_card {
+        width: calc(50% - 45px);
+    }
+
+    .whyUs_card_section {
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .whyUs_card1,
+    .whyUs_card3,
+    .whyUs_card2 {
+        width: 100%;
+    }
+
+    .customerReview_container {
+        padding-top: 20px;
+    }
+
+    .carousel .card {
+        width: 50%;
+    }
+
+    .faq_details_section {
+        padding: 0 15px;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1300px) {
+    .towingHomeScreen_section {
+        padding: 0 15px;
+    }
+
+    #towingBooking {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .towingAboutUs_section {
+        padding: 0 15px;
+    }
+
+    .howWeDo_card_section {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .howWeDo_card_section {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .whyUs_card_section {
+        padding-left: 25px;
+        padding-right: 25px;
+        gap: 30px;
+    }
+
+    .faq_details_section {
+        padding: 0 15px;
+        gap: 20px;
+    }
+}
