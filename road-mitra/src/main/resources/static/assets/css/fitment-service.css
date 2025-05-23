@@ -1,0 +1,2005 @@
+:root {
+    --yellow: #FDCD18;
+    --black: #000000;
+    --white: #FFFFFF;
+    --whitesmoke: #f1f1f1;
+    --primary-color: #FDCD18;
+    --secondary-color: #e8e8e8;
+    --text-dark: #323113;
+    --text-light: #b8b894;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 252);
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.container {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.callbtn-mb {
+    display: none;
+}
+.about-mb{
+    display: none;
+}
+.aboutimg-mb{
+    display: none;
+}
+.bookbtn-mb{
+    display: none;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+#home-bg {
+    background-image: url('./../images/fitment/fitment-service-page-3.webp');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 100%;
+    background-position: center;
+}
+
+#home-bg::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(to top right, var(--white) 48%, transparent 50%);
+    height: 180px;
+}
+
+.homeServices {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: start;
+    margin-top: 80px;
+    padding-left: 10%;
+}
+
+.homeServices img {
+    padding: 0 20px;
+    background-position: center;
+}
+
+.homeservices-card {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(197, 182, 173, 0.836);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 198, 151, 0.904);
+    text-decoration: none;
+    justify-content: center;
+    gap: 2px;
+}
+
+.homeservices-card p {
+    color: #323113;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.herosection {
+    padding-left: 10%;
+}
+
+.herohead_text {
+    margin: 20px 0px;
+}
+
+.herohead_text h1 {
+    color: var(--yellow);
+    font-size: 48px;
+    margin-top: -30px;
+}
+
+.herohead_text p {
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.homescreenbtn {
+    margin-top: 30px;
+    all: unset;
+}
+
+.homescreenbtn .btn-anim {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--yellow);
+    transition: .5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.homescreenbtn .btn-anim:hover {
+    background-color: var(--yellow);
+    color: #000000;
+    box-shadow: 0 0 5px var(--yellow),
+        0 0 25px var(--yellow),
+        0 0 50px var(--yellow),
+        0 0 200px var(--yellow);
+    -webkit-box-reflect: below -15px linear-gradient(transparent, #0005);
+}
+
+.homescreenbtn .btn-anim span {
+    position: absolute;
+    display: block;
+}
+
+.homescreenbtn .btn-anim span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FDCD18);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.homescreenbtn .btn-anim span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FDCD18);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.homescreenbtn .btn-anim span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #FDCD18);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.homescreenbtn .btn-anim span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(270deg, transparent, #FDCD18);
+    animation: animate4 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+#about-fitment {
+    padding: 50px 0;
+}
+
+.about-fitmentsection {
+    max-width: 1200px;
+}
+
+.about-fitmentdownsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-fitmentleftsectionimage {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateZ(100%);
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.about-fitmentleftsectionimage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.show4 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateZ(0);
+}
+
+.about-fitmentrightsection {
+    flex: 1;
+    min-width: 300px;
+    font-weight: 400;
+}
+
+.updateheading {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show3 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.updateheading h2 {
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.about-fitmentrightsection ul li {
+    list-style: none;
+    text-align: justify;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.about-fitmentrightsection li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-fitmentrightsectiondetails li.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.callbtn {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.callbtn button {
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    background: var(--yellow);
+    font-weight: 600;
+}
+
+.callbtn button:hover {
+    background: black;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+#fitmentservicedo {
+    padding: 50px 0;
+}
+
+.fitmentservicedosection {
+    max-width: 1200px;
+}
+
+.serviceshead {
+    text-align: center;
+}
+
+.fitmentdownsection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.fitmentservicedoleftsection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookbtn {
+    background-color: var(--yellow);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.bookbtn:hover {
+    background-color: green;
+    color: #f1f1f1;
+}
+
+.fitmentservicedorightsection {
+    width: 48%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fitmentservicedorightsection ul li h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fitmentservicedorightsection .fitmentservicedolist ul {
+    list-style: none;
+}
+
+.fitmentservicedorightsection .fitmentservicedolist ul li:before {
+    content: '>';
+    color: var(--yellow);
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.fitmentservicedorightsection ul li {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fitmentservicedorightsection ul li.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+#chooseus {
+    padding: 50px 0;
+}
+
+.chooseus_section {
+    max-width: 1200px;
+}
+
+.chooseus_head {
+    text-align: center;
+}
+
+.chooseus_head p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chooseus_timeline {
+    margin-top: 50px;
+    position: relative;
+}
+
+.chooseus_card-section {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* animation: movedown 1s linear forwards; */
+    opacity: 0;
+
+}
+.chooseus_card-section img{
+    border-radius: 50%;
+    border: 1px solid rgb(88, 77, 39);
+    padding: 5px;
+    background-color: white;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.chooseus_card-section:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.chooseus_card-section:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.chooseus_card-section:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.chooseus_card-section:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.chooseus_card-section:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.chooseus_card {
+    padding: 20px 30px;
+    background: #FEF5D6;
+    position: relative;
+    border-radius: 6px;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.chooseus_card-section img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.chooseus_timeline.show-line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #fef5d6;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 5s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.chooseus_card h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.chooseus_card h6 {
+    font-weight: 300;
+    display: inline-block;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fef5d6;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fef5d6;
+    left: -13px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+#howwedo {
+    padding: 50px 0;
+}
+
+.howwedosection {
+    max-width: 1200px;
+    align-items: center;
+}
+
+.howwedosectionhead {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    text-align: center;
+}
+
+.show1 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.howwedocardsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+    text-align: center;
+}
+
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+.howwedocard {
+    width: 20%;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.howwedoicon {
+    overflow: hidden;
+}
+
+.howwedoimage {
+    width: 100%;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+#fitmentserviceoffer {
+    padding: 20px 0;
+}
+
+.fitments_section {
+    max-width: 1200px;
+}
+
+.fitment-card {
+    position: sticky;
+    top: 100px;
+    height: 280px;
+    padding: 0px 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    --offset: 60px;
+}
+
+.fitment-card:nth-of-type(0) {
+    transform: translate(0px, calc((0 - 1) * var(--offset)));
+}
+
+.fitment-card:nth-of-type(1) {
+    transform: translate(0px, calc((1 - 1) * var(--offset)));
+}
+
+.fitment-card:nth-of-type(2) {
+    transform: translate(0px, calc((2 - 1) * var(--offset)));
+}
+
+.fitment-card:nth-of-type(3) {
+    transform: translate(0px, calc((3 - 1) * var(--offset)));
+}
+
+.fitment-card:nth-of-type(4) {
+    transform: translate(0px, calc((4 - 1) * var(--offset)));
+}
+
+.fitment-card:nth-of-type(5) {
+    transform: translate(0px, calc((5 - 1) * var(--offset)));
+}
+
+.space {
+    height: 30vh;
+}
+
+.fitments_head {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card__inner {
+    will-change: transform;
+    background: #fff7d9;
+    border-radius: 14px;
+    display: flex;
+    overflow: hidden;
+    transform-origin: center top;
+}
+
+
+.card__image-container {
+    display: flex;
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.card__content {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.card__content a{
+    font-weight: 600;
+    text-align: end;
+}
+.card__title h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #16263a;
+}
+
+.card__description {
+    line-height: 1.4;
+    font-size: 16px;
+    color: #16263a;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+#customertestimonial {
+    padding: 50px 0;
+}
+
+.customerhead {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* .customerhead h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+} */
+
+.customerhead h2 {
+    position: relative;
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.customerhead h2::after {
+    position: absolute;
+    content: "";
+    left: 49%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 5rem;
+    background-color: var(--primary-color);
+}
+
+.testimonial-carousel-parent {
+    max-width: 1200px;
+}
+
+.testimonial-carousel {
+    width: 100%;
+    position: relative;
+}
+
+#left {
+    top: 50%;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(255, 255, 252);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 5;
+}
+
+#right {
+    top: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(255, 255, 252);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 5;
+}
+
+.testimonial-carousel #left:hover {
+    color: #FDCD18;
+}
+
+.testimonial-carousel #left:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.testimonial-carousel #left:first-child {
+    left: -32px;
+}
+
+.testimonial-carousel #left:last-child {
+    right: -32px;
+}
+
+.testimonial-carousel #right:hover {
+    color: #FDCD18;
+}
+
+.testimonial-carousel #right:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.testimonial-carousel #right:first-child {
+    left: -32px;
+}
+
+.testimonial-carousel #right:last-child {
+    right: -32px;
+}
+
+.testimonial-carousel .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 50px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 25px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 0 2px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.card {
+    justify-content: space-between;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    scroll-snap-align: start;
+    height: 400px;
+    background-color: rgb(255, 255, 252);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.testi-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.card span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    color: rgb(255, 255, 252);
+}
+
+.card p {
+    color: var(--text-light);
+    padding: 0 20px;
+    font-size: 13px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.testi-user {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+.testi-user img {
+    max-width: 50px;
+    border-radius: 100%;
+    border: 2px solid var(--primary-color);
+    transition: 0.3s;
+}
+
+.card h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.card h6 {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.card:hover::before {
+    width: 400%;
+}
+
+.card:hover :is(h4, h5) {
+    color: var(--text-dark)
+}
+
+.card:hover :is(p, h6) {
+    color: var(--text-dark)
+}
+
+.testi-user:hover img {
+    border-color: var(--white);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+#faqquestions {
+    padding: 50px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.faqs-container {
+    padding: 30px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fffdf1;
+    border-radius: 10px;
+}
+
+.content-container {
+    padding: 20px 0;
+}
+
+.faqs-container h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.faqs-container h5 {
+    text-align: center;
+    color: #FDCD18;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faqs-container .faq-header {
+    border-radius: 10px;
+    display: flex;
+    color: var(--black);
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.faqs-container .faq-header .open,
+.faqs-container .faq-header .close {
+    position: absolute;
+    color: #FDCD18;
+    right: 0;
+    padding: 0 32px;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.faqs-container .faq-header .open.active,
+.faqs-container .faq-header .close.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.faqs-container .faq-header h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 32px;
+}
+
+.faqs-container .content {
+    padding: 0 32px;
+    background: #fffdf1;
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.faqs-container .content.active {
+    max-height: 600px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:600px) {
+
+    #home-bg {
+        min-height: 80vh;
+        padding-bottom: 100px;
+    }
+
+    #home-bg::after {
+        background: linear-gradient(to top right, var(--white) 45%, transparent 50%);
+    }
+
+    .homeServices {
+        gap: 5px;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        justify-content: start;
+        gap: 12px;
+    }
+    .homeservices-card {
+        width: 90px;
+    }
+
+    #home-bg::after {
+        height: 140px;
+    }
+
+    .herohead_text h1 {
+        font-size: 28px;
+        margin-top: -80px;
+    }
+
+    .homescreenbtn {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .herohead_text p {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    /* -------------------------------------------- */
+
+    .about-fitmentdownsection {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-fitmentleftsectionimage, .about-fitmentrightsection{
+        width: 100%;
+    }
+    .aboutimg-desk{
+        display: none;
+    }
+    .about-fitmentrightsectiondetails li:nth-child(1){
+        display: none;
+    }
+    .aboutimg-mb{
+
+        display: block;
+        margin-left:  auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .callbtn {
+        display: none;
+    }
+    .updateheading{
+        display: none;
+    }
+    .about-mb{
+        display: block;
+    }
+    .about-mb h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .callbtn-mb {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .callbtn-mb button {
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        transition: 0.5s;
+        border: none;
+        background: var(--yellow);
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    .callbtn-mb button:hover {
+        background: green;
+        color: var(--white);
+    }
+
+    .updateheading {
+        width: 100%;
+    }
+
+    .updateheading h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .about-fitmentrightsection ul li {
+        padding: 20px;
+        text-align: center;
+    }  
+
+    /* -------------------------------------------- */
+
+    .fitmentdownsection {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bookbtn{
+        display: none;
+    }
+    .bookbtn-mb  {
+        background-color: var(--yellow);
+        border-radius: 10px;
+        border: none;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        display: block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .bookbtn-mb:hover {
+        background-color: green;
+        color: #f1f1f1;
+    }
+    
+    /* -------------------------------------------- */
+
+    .fitmentservicedosection {
+        flex-wrap: wrap;
+    }
+
+    .fitmentservicedoleftsection {
+        width: 100%;
+    }
+
+    .serviceshead h2 {
+        font-size: 28px;
+    }
+
+    .fitmentservicedorightsection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .fitmentimageparent {
+        padding: 10px 0;
+    }
+    /* -------------------------------------------- */
+    #chooseus {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .chooseus_head h2 {
+        font-size: 32px;
+    }
+
+    .chooseus_head p {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .chooseus_timeline {
+        margin: 50px auto;
+    }
+
+    .chooseus_timeline.show-line::after {
+        left: 31px;
+    }
+
+    .chooseus_card-section {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .chooseus_card {
+        font-size: 13px;
+    }
+
+    .chooseus_card h6 {
+        font-size: 14px;
+    }
+
+    .chooseus_card small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img,
+    .right-container img {
+        left: 10px
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 15px solid #fef5d6;
+        border-left: 0;
+        left: -13px;
+    }
+
+    /* -------------------------------------------- */
+    #howwedo {
+        padding: 50px 0;
+    }
+
+    .howwedocard {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .howwedocardsection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .show2 {
+        overflow: hidden;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /* --------------------------------------------- */
+    .fitment-card {
+        height: 500px;
+    }
+
+    .fitments_head h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .card__inner {
+        flex-direction: column;
+    }
+
+    .card__image-container {
+        width: 100%;
+    }
+
+    .card__image {
+        aspect-ratio: 6 / 2;
+    }
+
+    .card__title {
+        font-size: 18px;
+    }
+
+    .card__description {
+        font-size: 12px;
+    }
+
+    .card__content {
+        padding: 20px 20px;
+    }
+
+
+
+
+    /* -------------------------------------------- */
+    .faqs-container h2 {
+        font-size: 28px;
+    }
+
+    .faqs-container .faq-header h3 {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .faqs-container .content p {
+        font-size: 12px;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    /* -------------------------------------------- */
+    .space {
+        height: 30vh;
+    }
+
+    .testi-detail {
+        margin-top: 0px;
+    }
+
+    .customerhead h2 {
+        font-size: 20px;
+    }
+
+    .testimonial-carousel p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .testimonial-carousel .carousel {
+        grid-auto-columns: 100%;
+    }
+
+    /* -------------------------------------------- */
+    #about-fitment {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentservicedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #chooseus {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #howwedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentserviceoffer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #customertestimonial {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testi-des p {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .homeServices {
+        gap: 5px;
+        margin-top: 10%;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        justify-content: start;
+        gap: 11px;
+    }
+
+    .homeservices-card {
+        width: 100px;
+    }
+
+    #home-bg {
+        padding-bottom: 100px;
+    }
+
+    #home-bg::after {
+        height: 130px;
+    }
+
+    .herohead_text h1 {
+        font-size: 28px;
+        margin-top: -10px;
+    }
+
+    .homescreenbtn {
+        margin-top: 20px;
+    }
+
+    .herohead_text p {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    /* -------------------------------------------- */
+    .about-fitmentrightsectiondetails li:nth-child(1){
+        display: none;
+    }
+    
+    .about-fitmentdownsection {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-fitmentleftsectionimage, .about-fitmentrightsection{
+        width: 100%;
+    }
+    .aboutimg-desk{
+        display: none;
+    }
+    .aboutimg-mb{
+        display: block;
+        margin-left:  auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .callbtn {
+        display: none;
+    }
+    .updateheading{
+        display: none;
+    }
+    .about-mb{
+        display: block;
+    }
+    .about-mb h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .callbtn-mb {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .callbtn-mb button {
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        transition: 0.5s;
+        border: none;
+        background: var(--yellow);
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    .callbtn-mb button:hover {
+        background: green;
+        color: var(--white);
+    }
+
+    .updateheading {
+        width: 100%;
+    }
+
+    .updateheading h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .about-fitmentrightsection ul li {
+        padding: 20px;
+        text-align: center;
+    } 
+
+    /* -------------------------------------------- */
+    .fitmentservicedorightsection ul li {
+        font-size: 14px;
+    }
+
+    /* -------------------------------------------- */
+    #chooseus {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .chooseus_head h2 {
+        font-size: 32px;
+    }
+
+    .chooseus_head p {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .chooseus_timeline {
+        margin: 50px auto;
+    }
+
+    .chooseus_timeline.show-line::after {
+        left: 31px;
+    }
+
+    .chooseus_card-section {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .chooseus_card {
+        font-size: 13px;
+    }
+
+    .chooseus_card h6 {
+        font-size: 14px;
+    }
+
+    .chooseus_card small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img,
+    .right-container img {
+        left: 10px
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 15px solid #fef5d6;
+        border-left: 0;
+        left: -13px;
+    }
+
+    /* -------------------------------------------- */
+    #howwedo {
+        padding: 50px 0;
+    }
+
+    .howwedocard {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .howwedocardsection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .show2 {
+        overflow: hidden;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /* --------------------------------------------- */
+    .fitments_head h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .card__title h1 {
+        font-size: 20px;
+    }
+
+    .card__description {
+        font-size: 14px;
+    }
+
+    .fitment-card {
+        height: 400px;
+    }
+
+    /* -------------------------------------------- */
+    .faqs-container h2 {
+        font-size: 28px;
+    }
+
+    .faqs-container .faq-header h3 {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .faqs-container .content p {
+        font-size: 12px;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    /* -------------------------------------------- */
+    .space {
+        height: 30vh;
+    }
+
+    .testi-detail {
+        margin-top: 0px;
+    }
+
+    .customerhead h2 {
+        font-size: 20px;
+    }
+
+    .testimonial-carousel p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .testimonial-carousel .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    /* -------------------------------------------- */
+    #about-fitment {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentservicedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #chooseus {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #howwedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentserviceoffer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #customertestimonial {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testi-des p {
+        font-size: 12px;
+    }
+
+    .testimonial-carousel .carousel {
+        gap: 20px;
+    }
+
+}
+
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    .homeServices {
+        width: 95%;
+        display: flex;
+        gap: 11px;
+        justify-content: start;
+        margin-top: 5%;
+    }
+    .homeservices-card {
+        width: 100px;
+    }
+    #home-bg {
+        padding-bottom: 100px;
+    }
+
+    .callbtn {
+        padding-top: 10px;
+    }
+
+    .updateheading {
+        width: 100%;
+    }
+
+    .updateheading h3 {
+        font-size: 18px;
+    }
+    .callbtn{
+        margin-top: 10%;
+    }
+
+    .about-fitmentrightsection ul li {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    #howwedo {
+        padding: 50px 0;
+    }
+
+    .howwedocard {
+        width: 50%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .fitmentservicedosection {
+        flex-wrap: wrap;
+    }
+
+    .fitmentservicedoleftsection {
+        width: 40%;
+    }
+
+    .serviceshead {
+        font-size: 20px;
+    }
+
+    .fitmentservicedorightsection {
+        width: 60%;
+    }
+
+    .fitmentimageparent {
+        padding: 50 0;
+    }
+    
+    .faqs-container h2 {
+        font-size: 28px;
+    }
+
+    .faqs-container .faq-header h3 {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .faqs-container .content p {
+        font-size: 12px;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .testimonial-carousel .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    .fitments_head h2 {
+        font-size: 30px;
+    }
+
+    .card__title h1 {
+        font-size: 20px;
+    }
+
+    .card__description {
+        font-size: 14px;
+    }
+
+    .fitment-card {
+        height: 300px;
+    }
+
+    /* -------------------------------------------- */
+
+    #about-fitment {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentservicedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #chooseus {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #howwedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentserviceoffer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #customertestimonial {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testi-des p {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .testimonial-carousel .carousel {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width:992px) and (max-width:1400px) {
+    .homeServices {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+        justify-content: start;
+        margin-top: 5%;
+    }
+    #home-bg {
+        padding-bottom: 100px;
+    }
+
+    .about-fitmentsection {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .callbtn {
+        padding-top: 10px;
+    }
+
+    .updateheading {
+        width: 100%;
+    }
+
+    .updateheading h3 {
+        font-size: 18px;
+    }
+
+    .about-fitmentrightsection {
+        width: 80%;
+        padding: 0px 0;
+    }
+
+    .about-fitmentrightsection ul li {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .serviceshead {
+        font-size: 20px;
+    }
+
+    .fitmentimageparent {
+        padding: 50 0;
+    }
+
+    .faqs-container h2 {
+        font-size: 28px;
+    }
+
+    .faqs-container .faq-header h3 {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .faqs-container .content p {
+        font-size: 12px;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .testi-des {
+        margin-top: 20px;
+    }
+
+    .testimonial-carousel .carousel {
+        grid-auto-columns: calc((100% / 3) - 14px);
+    }
+
+    #about-fitment {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentservicedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #chooseus {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #howwedo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fitmentserviceoffer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #customertestimonial {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testimonial-carousel .carousel {
+        gap: 20px;
+    }
+}

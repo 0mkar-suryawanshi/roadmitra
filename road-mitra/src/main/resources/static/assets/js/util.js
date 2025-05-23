@@ -84,44 +84,23 @@ class ScrollToView {
 
 class Loader {
 
-    loaderCSS = `.loader {
-        width: 48px;
-        height: 48px;
-        position: relative;
-        animation : rotate 4s linear infinite;
-      }
-      .loader:before,
-      .loader:after {
-        content:"";
-        display: block;
-        border: 24px solid;
-        border-color: transparent transparent #fff  #fff;
-        position: absolute;
-        left: 0;
-        top: 0;
-        animation: mvx 1s infinite ease-in;
-      }
-      .loader:before {
-        left: -1px;
-        top: 1px;
-        border-color:#ffcc33  #ffcc33 transparent transparent;
-        animation-name:mvrx;
-      }
-    
-      @keyframes rotate {
-        100% {transform: rotate(360deg)}
-      }
-      @keyframes mvx {
-        0% , 15% {transform: translate(0 , 0) rotate(0deg)}
-        50% {transform: translate(-50% , 50%) rotate(180deg)}
-        100% {transform: translate(0% , 0%) rotate(180deg)}
-      }
-      @keyframes mvrx {
-        0% , 15%  {transform: translate(0 , 0) rotate(0deg)}
-        50% {transform: translate(50% , -50%) rotate(180deg)}
-        100% {transform: translate(0% , 0%) rotate(180deg)}
-      }
-    
+    loaderCSS = `
+        .loader_parent {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.577);
+            z-index: 999;
+        }
+
+        .loader {
+            width: 140px;
+        }     
     `
     constructor() {
         var styleTag = document.createElement('style');
@@ -131,9 +110,9 @@ class Loader {
     }
 
     openLoader() {
-        this.LoaderHtml = `<div style="position:fixed; top:0px;left:0px;display:flex;justify-content:center;align-items:center;width:100vw; height:100vh;background-color: rgba(0, 0, 0, 0.577);z-index:10">
-        <span class="loader"></span>
-    </div>`;
+        this.LoaderHtml = `<div id="loader_parent" class="loader_parent">
+        <img class="loader" src="./assets/images/common/RA-logo-loader.gif">
+        </div>`;
         var loaderDiv = document.createElement('div');
         loaderDiv.innerHTML = this.LoaderHtml;
         document.body.appendChild(loaderDiv);

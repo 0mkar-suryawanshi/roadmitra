@@ -1,3 +1,4 @@
+
 class apiService{
     constructor(){
    
@@ -20,3 +21,35 @@ class apiService{
       return response.json();
     })
    }
+
+   hello(){
+
+   }
+
+  post(url,data){
+  const options = {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+  };
+  return fetch(url, options)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+   }
+
+   delete(){
+
+   }
+
+   update(){
+
+   }
+}
+
+export default apiService;

@@ -1,0 +1,244 @@
+body {
+  overflow-x: hidden;
+}
+
+#service_landing h1 {
+  font-size: 40px;
+}
+
+.callerIcon {
+  width: 40px;
+  opacity: 0.7;
+}
+
+.bookServiceBtn {
+  background-color: #212529;
+  color: white;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+#service_landing a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 76, 255);
+}
+
+#how_Do_Title {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+#how_Do_Description {
+  font-size: 15px;
+  color: rgb(73, 73, 73);
+  line-height: 1.5;
+  letter-spacing: 0.05;
+}
+
+#howDo img {
+  width: 100px;
+}
+
+#howDo>div {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(73, 73, 73);
+  padding: 0 10px;
+}
+
+.descriptionTitle {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.coveredText {
+  font-weight: 300;
+  color: rgb(73, 73, 73);
+  font-size: 13px;
+  padding-left: 20px;
+  line-height: 200%;
+}
+
+.describedText {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgb(73, 73, 73);
+}
+
+#whenever {
+  background-color: #154585;
+}
+
+.bookServiceBtn2 {
+  font-weight: 500;
+  border-radius: 30px;
+  font-size: 17px;
+  padding: 17px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+#whenever img {
+  width: 90px;
+  padding: 20px;
+}
+
+.wheneverTitle {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.wheneverDescription {
+  font-weight: 300;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+#wheneverPoints>div {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#wheneverPoints>div div p:first-child {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#wheneverPoints>div div p:nth-child(2) {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#getStarted {
+  background-color: #f1fdfe;
+}
+
+#getStarted>div>div p:first-child {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+#getStarted>div>div p:nth-child(2) {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#getStarted>div>div button {
+  font-weight: 300;
+  color: white;
+  font-size: 17px;
+  background-color: #212529;
+  border-radius: 30px;
+}
+
+#serviceTestimonialsTitle {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+#testimonialProfile {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+#starDiv img {
+  width: 25px;
+}
+
+#testimonialText {
+  font-weight: 400;
+  color: rgb(73, 73, 73);
+  font-size: 12px;
+}
+
+#testimonialText+p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#nextArrows img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #fe6601;
+  padding: 5px;
+}
+
+#nextArrows>img:first-child {
+  transform: scaleX(-1);
+}
+
+.price_card_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 0;
+  padding-bottom: 40px;
+}
+
+.price_card {
+  background-color: white;
+  box-shadow: 0 0 10px #8e8d8d29;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.price_card h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.price_card h6 {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 767px) {
+  #service_Description> :nth-child(2) {
+    padding-left: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  #wheneverPoints>div:nth-child(2n-1) {
+    margin-right: 40px;
+  }
+
+  .wheneverTitle {
+    font-size: 40px;
+  }
+
+  .wheneverDescription {
+    font-size: 15px;
+  }
+
+  .coveredText {
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .descriptionTitle {
+    font-size: 40px;
+  }
+
+  #service_landing h1 {
+    font-size: 60px;
+  }
+}

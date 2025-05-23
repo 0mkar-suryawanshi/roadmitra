@@ -1,0 +1,1470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+:root {
+  --bg_color: #ffffff;
+  --black: #080808;
+  --bg_black: #212121;
+  --gray: #797989;
+  --primary_color: #ffcc33;
+  --secondary_color: #fefaeb;
+  --bg_lg: linear-gradient(90deg, rgb(255, 244, 143) 0%, rgb(255, 238, 82) 100%);
+  --box-shadow-primary: 0 0 25px rgba(31, 31, 31, 0.08);
+  --bg_gray: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--bg_color);
+  overflow-x: hidden;
+}
+
+/* ---------------------------------------------------homescreen------------------------------------------------- */
+
+#home {
+  height: calc(100vh - 70px);
+  background-color: #212121;
+  background-image: url('./../images/Dashcam/bg-pattern.svg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.homesceeen_container {
+  max-width: 1200px;
+}
+
+#dashcam_booking {
+  position: absolute;
+  width: 100%;
+  min-height: 436px;
+  background: #f5f5f5;
+  border-radius: 36px;
+  top: -20%;
+  left: 0;
+  display: none;
+  z-index: 5 !important;
+}
+
+.homesceeen_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.home_left {
+  width: 45%;
+  position: relative;
+}
+
+.home_headtext h1 {
+  line-height: 1.3;
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--bg_color);
+}
+
+.home_headtext p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #9c9c9c;
+}
+
+.homescn_bookbtn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg_color);
+  border-radius: 30px;
+  width: 70%;
+}
+
+.cx_location {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.cx_location p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.home_button {
+  background-color: var(--primary_color);
+  color: var(--bg_black);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.home_img {
+  width: 48%;
+  display: grid;
+  place-items: center;
+}
+
+.home_img img {
+  width: 550px;
+}
+
+/* ---------------------------------------------------about------------------------------------------------- */
+
+#about {
+  padding: 50px 0;
+  padding-top: 0;
+}
+
+.about_bg {
+  background-color: var(--bg_gray);
+}
+
+.about_section {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_left {
+  width: 45%;
+  padding: 100px 0;
+}
+
+.about_right {
+  width: 50%;
+  object-fit: cover;
+}
+
+.about_left p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary_color);
+}
+
+.about_left h4 {
+  margin-top: 5px;
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.about_left h6 {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.contact_us_btn {
+  margin-top: 20px !important;
+}
+
+.contact_us {
+  background-color: var(--primary_color);
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.about_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------installation------------------------------------------------- */
+
+#installation {
+  padding: 50px 0;
+}
+
+.installation_section {
+  max-width: 1200px;
+}
+
+.installation_head {
+  text-align: center;
+}
+
+.installation_head p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary_color);
+}
+
+.installation_head h4 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.installationcard_section {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.installationcard {
+  width: 30%;
+  padding: 0 30px;
+}
+
+.installationcard_icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--secondary_color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.installationcard_icon img {
+  width: 35px;
+}
+
+.installationcard h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.installationcard p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+/* ---------------------------------------------------benefit------------------------------------------------- */
+
+#benefit {
+  margin: 50px 0;
+  padding: 70px 0;
+  background-color: var(--bg_gray);
+}
+
+.benefit_section {
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.benefit_left {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  width: 47%;
+  z-index: 2;
+}
+
+.benefit_card_section_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.benefit_card {
+  padding: 20px;
+  background-color: var(--bg_color);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.benefit_card_img {
+  background-color: var(--bg_gray);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.benefit_card_img img {
+  width: 30px;
+}
+
+.benefit_card h4 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.benefit_card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: 5px;
+}
+
+.benefit_card_section_right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.benefit_right {
+  width: 45%;
+}
+
+.benefit_right h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary_color);
+}
+
+.benefit_right h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.benefit_right p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.benefit_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefit_shape1 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  animation: four-dir 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes four-dir {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  40% {
+    transform: translate(-50px, -50px);
+  }
+
+  70% {
+    transform: translate(50px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.benefit_shape2 {
+  position: absolute;
+  bottom: -78px;
+  right: -20px;
+  z-index: 0;
+}
+
+/* ---------------------------------------------------whyus------------------------------------------------- */
+
+
+#whyus {
+  padding: 50px 0;
+}
+
+.whyus_section {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.whyus_left {
+  width: 48%;
+}
+
+.whyus_right {
+  width: 48%;
+  position: relative;
+}
+
+.whyus_left h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary_color);
+}
+
+.whyus_left h3 {
+  margin-top: 10px;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.whyus_left p {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.whyus_checkbox {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.whyus_checkbox ul {
+  list-style-type: none;
+}
+
+.whyus_checkbox li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 23px;
+  position: relative;
+  z-index: 1;
+  color: var(--black);
+}
+
+.whyus_checkbox ul li::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "✔";
+  font-weight: 300;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  background: var(--primary_color);
+  text-align: center;
+  font-size: 10px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.whyus_shape {
+  width: 100%;
+  height: auto;
+  animation: updown 0.8S infinite alternate;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/* ---------------------------------------------------customer review------------------------------------------------- */
+
+#customerReview {
+  padding: 50px 0;
+}
+
+.customer_review_section {
+  max-width: 1200px;
+  position: relative;
+}
+
+.customerReview_head {
+  text-align: center;
+}
+
+.customerReview_head p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary_color);
+}
+
+.customerReview_head h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.customerReview_container {
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.cx_carousel_btns {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .carousel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel .card {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  list-style: none;
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.carousel .card .card_inner {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 30px 40px;
+  background: var(--bg_color);
+  box-shadow: var(--box-shadow-primary);
+  margin: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.cx_testi_img {
+  position: absolute;
+  left: -19px;
+  top: 20px;
+  z-index: 1;
+  background: var(--gray);
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.cx_testi_img img {
+  width: 30px;
+}
+
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #002b00;
+}
+
+.carousel .card span {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.carousel .card p {
+  color: var(--gray);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.cx_carousel_btn {
+  background-color: var(--primary_color);
+  color: var(--bg_color);
+  font-size: 20px;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  outline: none;
+}
+
+.cx_testi_shape {
+  position: absolute;
+  left: -100px;
+  top: 50px;
+  animation: small-circle 10s linear infinite;
+}
+
+.cx_testi_shape img {
+  width: 100px;
+}
+
+@keyframes small-circle {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  40% {
+    transform: translate(0, -30px);
+  }
+
+  70% {
+    transform: translate(40px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ---------------------------------------------------FAQ------------------------------------------------- */
+
+#faq {
+  padding: 50px 0 100px 0;
+  position: relative;
+}
+
+.faq_section {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_left_section {
+  width: 50%;
+}
+
+.faq_right_section {
+  width: 38%;
+}
+
+.faq_right_section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.faq_head p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary_color);
+}
+
+.faq_head h3 {
+  margin-top: 5px;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.faqs_container {
+  padding-top: 50px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq {
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border: 1px solid #e4e4e4;
+  background-color: var(--bg_color);
+  border-radius: 5px;
+}
+
+.faq_ques {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_title {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 90%;
+}
+
+.faq_text {
+  display: none;
+  margin: 20px 0 0;
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.faq_title,
+.faq_text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.faq.active .faq_text {
+  display: block;
+}
+
+.faq-toggle {
+  border: none;
+  background-color: var(--black);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.faq-toggle .down_icon {
+  display: none;
+}
+
+.faq.active .faq-toggle .down_icon {
+  display: block;
+}
+
+.faq.active .faq-toggle .right_icon {
+  display: none;
+}
+
+.faq_shape1 {
+  position: absolute;
+  bottom: -50%;
+  left: -10%;
+  animation: upDown 1S infinite alternate;
+  z-index: -1;
+}
+
+.faq_shape2 {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  animation: zooming 1.3S infinite alternate;
+  z-index: -1;
+}
+
+@keyframes zooming {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.faq_shape3 {
+  position: absolute;
+  right: -6%;
+  bottom: 5%;
+  animation: upDown 1S infinite alternate;
+  z-index: -1;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ---------------------------------------------------media query------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+
+  /* ----------------homescreen-------------------- */
+  #home {
+    height: 100%;
+    min-height: calc(100vh - 70px);
+  }
+
+  .homesceeen_container {
+    padding: 0 20px;
+  }
+
+  .homesceeen_details {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .home_left {
+    width: 100%;
+  }
+
+  .home_img {
+    width: 100%;
+  }
+
+  .home_headtext h1 {
+    font-size: 24px;
+  }
+
+  .home_headtext p {
+    font-size: 14px;
+  }
+
+  .home_img img {
+    width: 330px;
+  }
+
+  .homescn_bookbtn {
+    width: 100%;
+  }
+
+  .cx_location p {
+    font-size: 12px;
+  }
+
+  #dashcam_booking {
+    width: 92vw;
+    min-height: unset;
+    height: calc(100dvh - 90px);
+    border-radius: 16px;
+    left: -1%;
+    top: -45px;
+    box-shadow: 0 10px 30px 0 rgba(34, 34, 34, 0.8);
+  }
+
+  /* ----------------about-------------------- */
+
+  #about {
+    padding-bottom: 0px;
+  }
+
+  .about_section {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .about_left {
+    width: 100%;
+    padding: 0 0 40px 0;
+  }
+
+  .about_right {
+    width: 100%;
+  }
+
+  /* ----------------installation-------------------- */
+
+  .installation_section {
+    padding: 0 20px;
+  }
+
+  .installationcard {
+    width: 100%;
+  }
+
+  /* ----------------benefit-------------------- */
+
+  .benefit_section {
+    padding: 0 20px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .benefit_left {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .benefit_card_section_left {
+    width: 100%;
+  }
+
+  .benefit_card_section_right {
+    width: 100%;
+  }
+
+  .benefit_right {
+    width: 100%;
+  }
+
+  .benefit_card {
+    width: 100%;
+  }
+
+  .benefit_shape1 {
+    top: -50px;
+  }
+
+  .benefit_shape2 {
+    right: 0px
+  }
+
+  /* ----------------why us-------------------- */
+
+  .whyus_section {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .whyus_left {
+    width: 100%;
+  }
+
+  .whyus_left h3 {
+    font-size: 24px;
+  }
+
+  .whyus_checkbox li {
+    font-size: 12px;
+  }
+
+  .whyus_right img {
+    width: 350px;
+  }
+
+  /* ----------------customer review-------------------- */
+
+  .customer_review_section {
+    padding: 0 20px;
+  }
+
+  .customerReview_head h3 {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .customerReview_container {
+    padding-top: 20px;
+  }
+
+  .carousel .card {
+    width: 100%;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+
+  /* ----------------faq-------------------- */
+
+  .faq_section {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .faq_left_section {
+    width: 100%;
+  }
+
+  .faq_shape3 {
+    z-index: -1;
+  }
+
+  .faq_right_section {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  /* ----------------homescreen-------------------- */
+  #home {
+    height: 100%;
+    min-height: calc(100vh - 70px);
+  }
+
+  .homesceeen_container {
+    padding: 0 20px;
+  }
+
+  .homesceeen_details {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .home_left {
+    width: 100%;
+  }
+
+  .home_img {
+    width: 100%;
+  }
+
+  .home_img img {
+    width: 420px;
+  }
+
+  .homescn_bookbtn {
+    width: 70%;
+  }
+
+  .cx_location p {
+    font-size: 12px;
+  }
+
+  /* ----------------about-------------------- */
+
+  #about {
+    padding-bottom: 0px;
+  }
+
+  .about_section {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .about_left {
+    width: 100%;
+    padding: 0 0 40px 0;
+  }
+
+  .about_right {
+    width: 100%;
+  }
+
+  /* ----------------installation-------------------- */
+
+  .installation_section {
+    padding: 0 20px;
+  }
+
+  .installationcard {
+    width: 100%;
+  }
+
+  /* ----------------benefit-------------------- */
+
+  .benefit_section {
+    padding: 0 20px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .benefit_left {
+    width: 100%;
+  }
+
+  .benefit_card_section_left {
+    width: 100%;
+  }
+
+  .benefit_card_section_right {
+    width: 100%;
+  }
+
+  .benefit_right {
+    width: 100%;
+  }
+
+  .benefit_card {
+    width: 100%;
+  }
+
+  .benefit_shape1 {
+    top: -50px;
+  }
+
+  .benefit_shape2 {
+    right: 0px
+  }
+
+  /* ----------------why us-------------------- */
+
+  .whyus_section {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .whyus_left {
+    width: 100%;
+  }
+
+  .whyus_left h3 {
+    font-size: 24px;
+  }
+
+  .whyus_checkbox li {
+    font-size: 12px;
+  }
+
+  /* ----------------customer review-------------------- */
+
+  .customer_review_section {
+    padding: 0 20px;
+  }
+
+  .customerReview_head h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .customerReview_container {
+    padding-top: 20px;
+  }
+
+  .carousel .card {
+    width: 100%;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+
+  /* ----------------faq-------------------- */
+
+  .faq_section {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .faq_left_section {
+    width: 100%;
+  }
+
+  .faq_shape3 {
+    z-index: -1;
+  }
+
+  .faq_right_section {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+  /* ----------------homescreen-------------------- */
+  #home {
+    height: 100%;
+    min-height: calc(100vh - 70px);
+  }
+
+  .homesceeen_container {
+    padding: 0 20px;
+  }
+
+  .homesceeen_details {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .home_left {
+    width: 100%;
+  }
+
+  .home_img {
+    width: 100%;
+  }
+
+  .home_img img {
+    width: 420px;
+  }
+
+  .homescn_bookbtn {
+    width: 50%;
+  }
+
+  .cx_location p {
+    font-size: 12px;
+  }
+
+  /* ----------------about-------------------- */
+
+  #about {
+    padding-bottom: 0px;
+  }
+
+  .about_section {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .about_left {
+    width: 100%;
+    padding: 0 0 40px 0;
+  }
+
+  .about_right {
+    width: 100%;
+  }
+
+  /* ----------------installation-------------------- */
+
+  .installation_section {
+    padding: 0 20px;
+  }
+
+  .installationcard {
+    width: 45%;
+  }
+
+  /* ----------------benefit-------------------- */
+
+  .benefit_section {
+    padding: 0 20px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .benefit_left {
+    width: 100%;
+  }
+
+  .benefit_card_section_left {
+    width: 100%;
+  }
+
+  .benefit_card_section_right {
+    width: 100%;
+  }
+
+  .benefit_right {
+    width: 100%;
+  }
+
+  .benefit_card {
+    width: 100%;
+  }
+
+  .benefit_shape1 {
+    top: -50px;
+  }
+
+  .benefit_shape2 {
+    right: 0px
+  }
+
+  /* ----------------why us-------------------- */
+
+  .whyus_section {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .whyus_left {
+    width: 100%;
+  }
+
+  .whyus_left h3 {
+    font-size: 24px;
+  }
+
+  .whyus_checkbox li {
+    font-size: 12px;
+  }
+
+  .whyus_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* ----------------customer review-------------------- */
+
+  .customer_review_section {
+    padding: 0 20px;
+  }
+
+  .customerReview_head h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .customerReview_container {
+    padding-top: 20px;
+  }
+
+  .carousel .card {
+    width: 100%;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+
+  /* ----------------faq-------------------- */
+
+  .faq_section {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .faq_left_section {
+    width: 100%;
+  }
+
+  .faq_shape3 {
+    z-index: -1;
+  }
+
+  .faq_right_section {
+    display: none;
+  }
+
+  #dashcam_booking {
+    width: 50%;
+    left: 25%;
+  }
+
+}
+
+@media screen and (min-width:993px) and (max-width:1300px) {
+
+  /* ----------------homescreen-------------------- */
+
+  #home {
+    height: 100%;
+    min-height: calc(100vh - 70px);
+  }
+
+  .homesceeen_container {
+    padding: 0 20px;
+  }
+
+  .home_headtext h1 {
+    font-size: 30px;
+  }
+
+  .home_headtext p {
+    font-size: 14px;
+  }
+
+  .home_img img {
+    width: 400px;
+  }
+
+  .homescn_bookbtn {
+    width: 80%;
+  }
+
+  #dashcam_booking {
+    top: -40%;
+  }
+
+  /* ----------------about-------------------- */
+
+  .about_section {
+    padding: 0px 20px;
+  }
+
+  /* ----------------benefit-------------------- */
+
+  .benefit_section {
+    padding: 0 20px;
+  }
+
+  /* ----------------why us-------------------- */
+
+  .whyus_section {
+    padding: 0 20px;
+  }
+
+  .whyus_right {
+    display: flex;
+    align-items: center;
+  }
+
+  .whyus_right img {
+    width: 400px;
+  }
+
+  /* ----------------customer review-------------------- */
+
+  .customer_review_section {
+    padding: 0 20px;
+  }
+
+  /* ----------------faq-------------------- */
+
+  .faq_section {
+    padding: 0 20px;
+  }
+
+}
+
+@media (orientation: portrait) {
+  #home{
+    padding: 50px 0;
+    height: 100% !important;
+    min-height: unset;
+  }
+}

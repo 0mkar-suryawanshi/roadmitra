@@ -862,7 +862,7 @@ async function proceedToPay(refId) {
       amount: towingPriceDetails.totalAmount * 100,
       name: "Towing Service",
       description: "",
-      image: "https://readyassist.in/assets/images/home/logo.png",
+      image: "https://RoadMitra.in/assets/images/home/logo.png",
       order_id: refId,
       theme: { color: "#ffcc33" },
 
@@ -921,7 +921,7 @@ window.proceedToPay = proceedToPay;
 function trackOrder() {
   orderDetails = sessionStorage.getItem("orderId");
   const trackUrl =
-    "https://tracko.readyassist.net/order-track/" + (9999999999 + orderDetails);
+    "https://tracko.RoadMitra.net/order-track/" + (9999999999 + orderDetails);
   window.open(trackUrl, "_blank");
 }
 window.trackOrder = trackOrder;

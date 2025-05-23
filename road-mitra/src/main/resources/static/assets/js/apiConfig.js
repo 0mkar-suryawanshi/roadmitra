@@ -1,6 +1,6 @@
 import { environment } from "./environment.js";
 
-const baseUrl = !environment.isProd ? 'https://vmsmatrix.readyassist.net/api/' : 'https://vms.readyassist.net/api/';
+const baseUrl = !environment.isProd ? 'https://vmsmatrix.RoadMitra.net/api/' : 'https://vms.RoadMitra.net/api/';
 
 const apis =
 {

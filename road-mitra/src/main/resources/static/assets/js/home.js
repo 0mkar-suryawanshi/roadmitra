@@ -90,7 +90,7 @@ class Home {
     {
       name: "Ashok Shastry",
       info: "Co-Founder & CEO, DriveU",
-      review: "Roadside Assistance from RoadMitraDriveU is a great addition for our customers. It's great fit with our motto of simplifying the car ownership journey for the millions of car owners in India.",
+      review: "Roadside Assistance from RoadMitra on DriveU is a great addition for our customers. It's great fit with our motto of simplifying the car ownership journey for the millions of car owners in India.",
       image: "./assets/images/landing/ashok.webp"
     },
     {
@@ -157,7 +157,7 @@ class Home {
 
   route(url) {
     this.loader.openLoader();
-    window.location.href = "https://app.RoadMitra.in" + url;
+    window.location.href = "https://app.readyassist.in" + url;
   }
 
   setTestimonials() {
@@ -205,9 +205,8 @@ class Home {
   submitJoin() {
     var name = document.getElementById('sp_name');
     var number = document.getElementById('sp_number');
-    var email = document.getElementById('sp_email');
 
-    if (name.value.length < 4 || number.value.toString().length !== 10 || email.value.length < 6) {
+    if (name.value.length < 4 || number.value.toString().length !== 10) {
       this.snackbar.openSnack('Please provide valid details', 2000, 'snack_error')
       return;
     }
@@ -215,7 +214,6 @@ class Home {
     const payload = {
       customerName: name.value,
       customerMobileNo: number.value,
-      customerEmailId: email.value,
       title: "Service Partner related query",
       description: "Become our RSA partner & get assured business & take your business next level with us. Choose your path to partnership & get all the support you need to succeed.",
       type: "support",
@@ -225,7 +223,6 @@ class Home {
       .then(res => {
         name.value = "";
         number.value = "";
-        email.value = "";
         this.snackbar.openSnack('Your request submitted successfully', 2000, 'snack_success')
       });
 
@@ -241,13 +238,14 @@ window.home = new Home();
 //       sessionStorage.setItem('popup', "1");
 //       document.getElementById('popup').classList.remove('hidden');
 //     }
-//   }, 2000);
+//   }, 3000);
   
 //   document.getElementById('closeBtn').addEventListener('click', function() {
 //       document.getElementById('popup').classList.add('hidden');
 //   });
 
 // });
+
 
 
 
