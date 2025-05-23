@@ -84,7 +84,7 @@ function toggleSlider(screenEvent, serviceName) {
 
   let iframeURL = '';
 
-  const baseURL = environment.isProd ? 'https://app.RoadMitra.in' : 'http://localhost:4200';
+  const baseURL = environment.isProd ? 'https://app.readyassist.in' : 'http://localhost:4200';
 
   // Hardcoded URLs based on screenEvent with dynamic id and vtype
   switch (screenEvent) {
