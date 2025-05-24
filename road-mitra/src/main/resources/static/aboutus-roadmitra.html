@@ -55,63 +55,18 @@
 
   <main class="w-100">
 
-    <div id="boardInfo" class="none justify-center items-center"
-      style="height:100vh;width:100vw;position:fixed; top:0px; background-color: rgba(128, 128, 128, 0.463);z-index:20;overflow-y:scroll">
-
-
-      <div class="col-12 col-lg-8 flex flex-wrap bg-white relative"
-        style="border-radius: 20px; overflow-y:scroll;max-height:100vh;">
-        <img onclick="closeBoardDetails()" style="width:30px;height:30px;z-index:5;right:5px;"
-          class="absolute end-0 mt-10 pointer" src="./assets/images/common/close-line.svg">
-        <div class="col-12 col-md-6 relative">
-          <img id="memberImage" class="w-100" src="">
-          <div style="z-index:2;top:0;background-image: linear-gradient(to top,black,transparent 30%);"
-            class="absolute w-100 h-100">
-
-          </div>
-          <p id="memberDescription2" class="weight400 text-white absolute px-20 pb-20"></p>
-        </div>
-        <div class="col-12 col-md-6 px-20 flex flex-column justify-between">
-          <div>
-            <p id="memberName" class="pt-30 weight500" style="font-size:20px">${selectedMember.name}</p>
-            <p id="memberBase" class="weight400 fs-13" style="font-size:13px">${selectedMember.base}</p>
-            <p id="memberDesignation" class="weight400 fs-13" style="font-size:13px">${selectedMember.designation}</p>
-            <p id="memberDescription" class="pt-30 weight400" style="font-size:15px">${selectedMember.description}</p>
-
-          </div>
-          <div id="intoVideo" class="video_container">
-
-          </div>
-          <div class="flex py-3 pb-5 pt-5 social_container">
-            <img id="memberlinkedIn" style="width:20px;margin-right:5px;z-index:20"
-              class="pointer ${selectedMember.linkedIn?'':'none'}" src="./assets/images/about_us/board/linked.svg">
-            <img id="memberInstagram" style="width:20px;margin-left:5px;z-index:20"
-              class="pointer ${selectedMember.insta?'':'none'}" src="./assets/images/about_us/board/insta.svg">
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-    <div class="px-10 px-lg-20">
-      <div id="about_landing" class="br20 p-20">
-        <div class="crop-width flex flex-wrap">
-          <div class="col-12 col-lg-6 relative pb-lg-5" style="z-index:10;transition:.5s">
-            <p id="about_title" class="weight700 pt-30" style="line-height: 1.2;">Glimpse of <br> Our Story</p>
-            <p id="about_description" class="weight400 py-20 col-12" style="line-height: 1.5;">In 2015, RoadMitra was
-              ideated as an accidental emergency assistance
-              company by our founder, Vimal Singh SV, after losing a close friend to an
-              accident. RoadMitra is a family of 500+ members headquartered in a
-              state-of-the-art facility in Bangalore, efficiently monitoring our pan-India
-              service network through cutting-edge Autotech solutions. Today, we
-              proudly rank among India's top-rated automotive service solution
-              companies specializing in 24/7 emergency assistance and EV repairs.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <nav class="navbar_links" style="transform: translateY(0%);">
+            <div class="callButton">
+                <img src="./assets/images/common/call_us.svg" alt="call button">
+                <a class="mobileNumber" href="tel:8007296133 ">8007 296 133</a>
+            </div>
+            <a href="/index.html" class="navText">Home</a>
+            <p class="navText" onclick="openServicesMenu()">Services<span id="service_dropdown_icon"><img src="./assets/images/common/arrow-circle-down.svg" alt="Dropdown icon"></span></p>
+    
+            <a class="navText" href="/aboutus-RoadMitra.html">About</a>
+            <a class="navText" href="/contact-RoadMitra.html">Contact</a>
+            <a class="navText" href="/login.html">Logout</a>
+        </nav><br><br>
 
     <div id="about_relax" class="px-10">
       <div class="crop-width flex flex-wrap pb-20" style="transition:.6s">
@@ -145,104 +100,6 @@
             <img class="none lg-inline col-12" alt="mechanic" src="./assets/images/about_us/vector-updated.png">
           </div>
         </div>
-      </div>
-    </div>
-
-
-    <div id="openGallery"></div>
-
-    <div id="our_offer" class="py-40 px-20">
-      <div class="crop-width flex flex-wrap justify-center justify-md-between">
-        <div class="scroll-cards col-12 flex flex-wrap justify-center">
-          <div class="scroll_cards_item col-12 col-lg-10 mt-50 text-center">
-            <p id="offer_title" class="pb-3 lh-100">What We Offer</p>
-            <p class="fs-13 fs-lg-18 weight300" style="line-height: 1.5;">At our core, we deliver round-the-clock
-              Repairs
-              and assistance
-              service for bikes and cars, spanning the length and breadth of the
-              country, ensuring a hassle-free ride for our esteemed clientele.</p>
-          </div>
-          <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
-
-            <div class="col-5 col-lg-4 pe-5 stack_cards">
-              <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#ffc311">
-                <div class="p-2 text-center flow-hide">
-                  <img alt="On-Demand Services" class="stack_img br20" src="./assets/images/about_us/ondemand.png">
-                  <p class="offer_titles weight500">On-Demand Services</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-7 col-lg-8 stack_cards">
-              <div class="h-100 br20 flex items-center" style="background-color:#ffc311">
-                <p class="offer_description weight400 mx-30 mx-lg-40">"From puncture repair to
-                  accessories fitting, From Minor repairs to Periodic service, We provide 24/7 doorstep service to your
-                  vehicles anytime anywhere in India."</p>
-              </div>
-            </div>
-          </div>
-          <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
-            <div class="col-5 col-lg-4 pe-5 stack_cards">
-              <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#FFC657">
-                <div class="p-2 text-center flow-hide">
-                  <img alt="Workshops" class="stack_img br20" src="./assets/images/about_us/workshops.png">
-                  <p class="offer_titles pt-3 weight500 fs-16 fs-lg-20">Retrofitment Service</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-7 col-lg-8 stack_cards">
-              <div class="h-100 br20 flex items-center" style="background-color:#FFC657">
-                <p class="offer_description weight400 mx-30 mx-lg-40">“Retro Fitment: Convert your petrol or diesel
-                  vehicle at CNGFirst, India's largest chain of CNG conversion centers.”</p>
-              </div>
-            </div>
-          </div>
-          <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
-            <div class="col-5 col-lg-4 pe-5 stack_cards">
-              <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#ffc311">
-                <div class="p-2 text-center flow-hide">
-                  <img alt="subscriptions" class="stack_img br20" src="./assets/images/about_us/subscriptions.png">
-                  <p class="offer_titles pt-3 weight500 fs-16 fs-lg-20">Subscriptions</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-7 col-lg-8 stack_cards">
-              <div class="h-100 br20 flex items-center" style="background-color:#ffc311">
-                <p class="offer_description weight400 mx-30 mx-lg-40">"Subscribe to our yearly
-                  RSA Packages,
-                  Extended Warranty, or PRIME Packages and
-                  forget your worries about vehicle
-                  maintenance & breakdowns.”</p>
-              </div>
-            </div>
-          </div>
-          <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
-            <div class="col-5 col-lg-4 pe-5 stack_cards">
-              <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#FFC657">
-                <div class="p-2 text-center flow-hide">
-                  <img alt="towing" class="stack_img br20" src="./assets/images/about_us/towing-recovery.png">
-                  <p class="offer_titles pt-3 weight500 fs-16 fs-lg-20">Towing/Recovery</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-7 col-lg-8 stack_cards">
-              <div class="h-100 br20 flex items-center" style="background-color:#FFC657">
-                <p class="offer_description weight400 mx-30 mx-lg-40">"Don't worry about towing your vehicle, Avail 24/7
-                  towing services across India with 100% safety and transparency."</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
- 
-
-    <div class="lg-none">
-      <div id="celebrations_mobile" class="crop-width">
-
       </div>
     </div>
 

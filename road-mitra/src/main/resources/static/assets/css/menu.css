@@ -148,26 +148,12 @@
     font-weight: 600;
   }
   
-  .cngText span {
-    color: #eebc39;
-  }
-  
-  .cngText:hover {
-    scale: 1.1;
-    transition: 0.2s;
-    font-weight: 500;
-  }
   
   
-  .mecText {
-    text-decoration: none;
-  }
+ 
   
-  .mecText {
-    color: #39b54a;
-    font-weight: 500;
-    font-size: 20px;
-  }
+  
+
   
   .inspection_theme {
     background-color: #06278a;

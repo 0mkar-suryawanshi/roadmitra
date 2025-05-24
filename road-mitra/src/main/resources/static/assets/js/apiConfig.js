@@ -40,11 +40,7 @@ const apis =
         primeWebDetails: baseUrl + 'subscription/plans/prime/web/page',
     },
 
-    cng: {
-        nearestCng: baseUrl + 'fuel-stations/nearest',
-        onthewayCng: baseUrl + 'fuel-stations/on-the-way',
-        onthewayMultiCng: baseUrl + 'fuel-stations/on-the-way-multi',
-    },
+   
 
     inspection: {
         inspectionServices: baseUrl + 'vehicle-inspection/fetch-service',

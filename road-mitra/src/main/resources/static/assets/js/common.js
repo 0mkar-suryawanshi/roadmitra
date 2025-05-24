@@ -91,11 +91,6 @@ function toggleSlider(screenEvent, serviceName) {
     case 'bookService':
       iframeURL = `${baseURL}/book-service`;
       break;
-
-    case 'cngBooking':
-      iframeURL = `${baseURL}/cng-check-eligibility.html/reg?number=`;
-      break;
-
     case 'serviceBooking':
       iframeURL = `${baseURL}/book-service/service?id=${service.id}&category=${service.category}&vType=${service.vtype}`;
       break;

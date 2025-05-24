@@ -107,8 +107,6 @@ function changeNavbarThemeBasedOnURL() {
     "multimedia_theme",
     "default_theme",
     "carrer_theme",
-    "cng_theme",
-    "cng_rfc_theme",
     "seatCover_theme",
     "yellowhat_theme",
   ];
@@ -203,24 +201,7 @@ function changeNavbarThemeBasedOnURL() {
       whiteIcons: true,
       mobileBg: "#212121",
     },
-    "cng-retrofitment-cngfirst.html": {
-      theme: "cng_theme",
-      whiteText: true,
-      whiteIcons: true,
-      mobileBg: "#112714",
-      logoImage: {
-        src: "./assets/images/cng/CNGFirst-logo.png",
-        width: "140px",
-        height: "40px",
-      },
-      logoText: "",
-    },
-    "careers.html": {
-      theme: "carrer_theme",
-      whiteText: true,
-      whiteIcons: true,
-      mobileBg: "#256de9",
-    },
+      
     "yellow-hat-riders-club.html": {
       theme: "yellowhat_theme",
       whiteText: false,
@@ -243,16 +224,5 @@ function changeNavbarThemeBasedOnURL() {
     }
   }
 
-  // Handle special cases
-  if (activeRoute.includes("cng-retro-fitment-")) {
-    const logoImage = document.querySelector(".logoicon");
-    const logoLink = document.querySelector(".logo_link");
-    if (logoImage) {
-      logoImage.src = "./assets/images/cng/CNGFirst-logo-black.png";
-      logoImage.style.width = "140px";
-      logoImage.style.height = "40px";
-    }
-    if (logoLink) logoLink.href = "./cng-retrofitment-cngfirst.html";
-    if (logoText) logoText.innerHTML = "";
-  }
+  
 }
