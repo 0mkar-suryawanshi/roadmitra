@@ -183,12 +183,6 @@ function changeNavbarThemeBasedOnURL() {
       whiteIcons: true,
       mobileBg: "#06278a",
     },
-    "multimedia-installation.html": {
-      theme: "multimedia_theme",
-      whiteText: true,
-      whiteIcons: true,
-      mobileBg: "#212121",
-    },
     "dashcam-installation.html": {
       theme: "multimedia_theme",
       whiteText: true,

@@ -413,27 +413,6 @@ export class ApiService {
         }
     }
 
-    async getJobs() {
-        Object.assign(withToken.headers, {Accept: "application/json",'Domain': 'ready' });
-        try {
-            const res = await fetch(apis.careers.jobs, {
-                method: 'GET',
-                headers: withToken.headers,
-            });
-            if (!res.ok) {
-                return {
-                    success: false,
-                    message: `Error ${res.status}: ${res.statusText}`
-                };
-            }
-            return await res.json();
-        } catch(error) {
-            return {
-                success: false,
-                message: error.message || 'An error occurred'
-            };
-        }
-    }
 
     async fetchFitmentService(payload) {
         try {
@@ -567,27 +546,7 @@ export class ApiService {
         }
     }
 
-    async fetchSubPlans(payload) {
-        try {
-            const res = await fetch(apis.subscription.subscriptionPlans, {
-                method: 'POST',
-                headers: withToken.headers,
-                body: JSON.stringify(payload)
-            });
-            if (!res.ok) {
-                return {
-                    success: false,
-                    message: `Error ${res.status}: ${res.statusText}`
-                };
-            }
-            return await res.json();
-        } catch (error) {
-            return {
-                success: false,
-                message: error.message || 'An error occurred'
-            };
-        }
-    }
+    
 
     async fetchAvailableSlots(payload) {
         try {
